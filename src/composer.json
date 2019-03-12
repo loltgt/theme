@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tgmpa/tgm-plugin-activation": "^2.6",
+        "wp-bootstrap/wp-bootstrap-navwalker": "^4.2"
+    }
+}
