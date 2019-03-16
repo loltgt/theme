@@ -32,7 +32,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="product-<?php the_data_ID(); ?>" <?php post_class(); ?>>
+<div id="product-<?php \theme\the_data_ID(); ?>" <?php post_class(); ?>>
 <div class="row">
 <?php
 /**

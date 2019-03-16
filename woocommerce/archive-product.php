@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 ?>
 <?php
-if ( has_page_hero() ) :
+if ( \theme\has_page_hero() ) :
 	get_template_part( 'template-parts/hero' );
 endif;
 ?>
