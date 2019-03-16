@@ -37,7 +37,7 @@ endif;
 if ( $fallback = Layer::get_subfield( 'video_fallback' ) ) :
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */
@@ -57,7 +57,7 @@ endif;
 if ( $custom = Layer::get_subfield( 'custom' ) ) :
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */
@@ -87,7 +87,7 @@ endif;
 <?php
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */

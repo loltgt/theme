@@ -18,7 +18,6 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-</div>
 <?php
 if ( is_product() ) :
 	if ( is_active_sidebar( 'post-bottom' ) ) :

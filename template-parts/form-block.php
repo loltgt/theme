@@ -30,7 +30,7 @@ if ( $legend = Layer::get_subfield( 'legend' ) ) :
 if ( $begin = Layer::get_subfield( 'fieldset_start' ) ) :
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */
@@ -43,7 +43,7 @@ endif;
 if ( $before = Layer::get_subfield( 'before' ) ) :
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */
@@ -55,7 +55,7 @@ endif;
 if ( $after = Layer::get_subfield( 'after' ) ) :
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */
@@ -68,7 +68,7 @@ endif;
 if ( $end = Layer::get_subfield( 'fieldset_end' ) ) :
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */

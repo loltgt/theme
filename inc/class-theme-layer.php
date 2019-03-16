@@ -47,7 +47,7 @@ class Layer {
 	 */
 	public static function get_layer() {
 		if ( ! defined( "THEME_LAYER_{COOKIEHASH}" ) )
-			throw new Exception( '/theme/Layer::get_layer() : Not correctly initialized.' );
+			throw new Exception( '\theme\Layer::get_layer() : Not correctly initialized.' );
 
 		return constant( "THEME_LAYER_{COOKIEHASH}" );
 	}
@@ -68,7 +68,7 @@ class Layer {
 		$_layer = "\\" . __NAMESPACE__ . "\\Layer_{$layer}";
 
 		if ( ! class_exists( $_layer ) )
-			throw new Exception( '/theme/Layer::set_layer() : Class not exists.' );
+			throw new Exception( '\theme\Layer::set_layer() : Class not exists.' );
 
 		return define( "THEME_LAYER_{COOKIEHASH}", $_layer );
 	}

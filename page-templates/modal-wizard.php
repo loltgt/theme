@@ -2,6 +2,9 @@
 /**
  * Template Modal Name: Wizard
  *
+ *
+ * @global null|object $post - \WP_Post
+ *
  * @package theme
  * @version 1.0
  */
@@ -55,7 +58,7 @@ while ( Layer::have_rows( 'pages' ) ) : Layer::the_row();
 /**
  * theme_modal_header_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_modal_header_start', $post->ID );
 ?>
@@ -71,7 +74,7 @@ echo apply_filters( 'theme_modal_header', ( $page_header ? $page_header : $heade
 /**
  * theme_print_notices hook.
  *
- * @hooked /theme/Functions->print_notices - 10
+ * @hooked \theme\Functions->print_notices - 10
  */
 do_action( 'theme_print_notices' );
 ?>
@@ -79,7 +82,7 @@ do_action( 'theme_print_notices' );
 /**
  * theme_modal_header_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_modal_header_end', $post->ID );
 ?>
@@ -89,7 +92,7 @@ do_action( 'theme_modal_header_end', $post->ID );
 /**
  * theme_modal_body_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_modal_body_end', $post->ID );
 ?>
@@ -108,7 +111,7 @@ endif;
 /**
  * theme_modal_body_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_modal_body_end', $post->ID );
 ?>
@@ -119,7 +122,7 @@ do_action( 'theme_modal_body_end', $post->ID );
 /**
  * theme_modal_header_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_modal_footer_start', $post->ID );
 ?>
@@ -141,7 +144,7 @@ endif;
 /**
  * theme_modal_header_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_modal_footer_end', $post->ID );
 ?>

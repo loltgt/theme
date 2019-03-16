@@ -113,7 +113,7 @@ class Functions {
 	/**
 	 * Conditional helper for page mode: Modal
 	 *
-	 * @see /theme/Functions::get_page_mode()
+	 * @see \theme\Functions::get_page_mode()
 	 *
 	 * @access public
 	 * @static
@@ -352,8 +352,8 @@ class Functions {
 	/**
 	 * Filters bloginfo name to return a custom brand name
 	 *
-	 * @see /theme/Customizer
-	 * @see /theme/Options
+	 * @see \theme\Customizer
+	 * @see \theme\Options
 	 * @see bloginfo()
 	 *
 	 * @param mixed $output
@@ -838,7 +838,7 @@ class Functions {
 	/**
 	 * Transforms plain text mail based to html format
 	 *
-	 * @see /theme/Functions->text2html()
+	 * @see \theme\Functions->text2html()
 	 *
 	 * @param string $text
 	 * @return string $html
@@ -884,7 +884,7 @@ class Functions {
 	/**
 	 * Adds a time signature at the end of the mail body
 	 *
-	 * @see /theme/Functions/send_form()
+	 * @see \theme\Functions->send_form()
 	 *
 	 * @param string $body
 	 * @return string $body
@@ -904,7 +904,7 @@ class Functions {
 	/**
 	 * Adds multipart MIME message headers to the mail
 	 *
-	 * @see /theme/Functions->send_form()
+	 * @see \theme\Functions->send_form()
 	 *
 	 * @param string $headers
 	 * @return string $headers
@@ -924,7 +924,7 @@ class Functions {
 	/**
 	 * Adapts the mail body to reflect multipart MIME specs
 	 *
-	 * @see /theme/Functions->send_form()
+	 * @see \theme\Functions->send_form()
 	 *
 	 * @param string $body
 	 * @return string $body
@@ -954,7 +954,7 @@ class Functions {
 	/**
 	 * Default filter for form fields in single and nested pages
 	 *
-	 * @see /theme/Functions->send_form()
+	 * @see \theme\Functions->send_form()
 	 *
 	 * @param array $form
 	 * @param array $fields
@@ -991,7 +991,7 @@ class Functions {
 	/**
 	 * Default form messages
 	 *
-	 * @see /theme/Functions->send_form_response()
+	 * @see \theme\Functions->send_form_response()
 	 *
 	 * @return array
 	 */
@@ -1008,7 +1008,7 @@ class Functions {
 	/**
 	 * Default filter for wizard form fields
 	 *
-	 * @see /theme/Functions->send_form()
+	 * @see \theme\Functions->send_form()
 	 *
 	 * @param array $form
 	 * @param array $fields
@@ -1045,7 +1045,7 @@ class Functions {
 	/**
 	 * Formats the mail body for wizard forms
 	 *
-	 * @see /theme/Functions->send_form()
+	 * @see \theme\Functions->send_form()
 	 *
 	 * @param body $body
 	 * @param string $form_id
@@ -1095,7 +1095,7 @@ class Functions {
 	 * To stop or not mail send for wizard forms, 
 	 * it sends only at the end of the wizard or if the page has submit flag
 	 *
-	 * @see /theme/Functions->send_form()
+	 * @see \theme\Functions->send_form()
 	 *
 	 * @param bool void
 	 * @param string $form_id

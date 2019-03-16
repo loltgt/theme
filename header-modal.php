@@ -20,7 +20,7 @@ namespace theme;
 /**
  * theme_modal_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_modal_start', $post->ID );
 ?>
@@ -33,7 +33,7 @@ do_action( 'theme_modal_start', $post->ID );
 /**
  * theme_print_notices hook.
  *
- * @hooked /theme/Functions/print_notices - 10
+ * @hooked \theme\Functions\print_notices - 10
  */
 do_action( 'theme_print_notices' );
 ?>

@@ -48,7 +48,7 @@ class Customizer {
 	/**
 	 * Registers control and settings for theme customizer
 	 *
-	 * @param object $wp_customize - WP_Customize_Manager
+	 * @param object $wp_customize - \WP_Customize_Manager
 	 */
 	public function register( $wp_customize ) {
 

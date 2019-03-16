@@ -41,7 +41,7 @@ class Admin {
 		add_action( 'login_init', array($this, 'login_initialize') );
 
 		/**
-		 * Hook to filter /theme/Admin outside here
+		 * Hook to filter \theme\Admin outside here
 		 *
 		 * @param object $this
 		 */
@@ -212,7 +212,7 @@ class Admin {
 	 *
 	 * @link https://wordpress.org/support/topic/how-to-add-fields-to-gallery-settings/
 	 *
-	 * @see /theme/Functions/gallery_shortcode()
+	 * @see \theme\Functions\gallery_shortcode()
 	 * @see /wp-includes/media-template.php
 	 */
 	public function extend_gallery_settings() {

@@ -15,8 +15,6 @@
  * @version 3.3.1
  */
 
-namespace theme;
-
 defined( 'ABSPATH' ) || exit;
 
 $total   = isset( $total ) ? $total : wc_get_loop_prop( 'total_pages' );

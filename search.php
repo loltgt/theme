@@ -11,8 +11,7 @@ namespace theme;
 
 get_header();
 ?>
-<div id="content" class="site-content">
-<main id="main" class="site-main" role="main">
+<main id="content" class="site-content" role="main">
 <?php
 if ( is_active_sidebar( 'page-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-top' );
@@ -47,7 +46,6 @@ if ( is_active_sidebar( 'page-bottom' ) ) :
 endif;
 ?>
 </main>
-</div>
 
 <?php
 get_footer();

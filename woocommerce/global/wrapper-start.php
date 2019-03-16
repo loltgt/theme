@@ -18,8 +18,6 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-
-<main id="main" class="site-main" role="main">
 <?php
 if ( is_product() ) :
 	if ( is_active_sidebar( 'post-top' ) ) :
@@ -31,4 +29,4 @@ else :
 	endif;
 endif;
 ?>
-<div id="content" class="site-content container">
+<main id="content" class="site-content" role="main">

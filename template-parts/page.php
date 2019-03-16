@@ -2,6 +2,9 @@
 /**
  * Page template part
  *
+ *
+ * @global null|object $post - \WP_Post
+ *
  * @package theme
  * @version 1.0
  */
@@ -12,13 +15,15 @@ use \theme\Layer;
 
 
 global $post;
+
+$wide_mode = is_page_mode( 'wide' );
 ?>
 <section id="page-<?php the_data_ID(); ?>" <?php post_class(); the_data_extras( 'page' ); ?>>
 <?php
 /**
  * theme_page_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_start', $post->ID );
 ?>
@@ -32,7 +37,7 @@ if ( false === strpos( $post->post_content, '</h', ( strlen( $post->post_content
 /**
  * theme_page_header_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_header_start', $post->ID );
 ?>
@@ -41,7 +46,7 @@ do_action( 'theme_page_header_start', $post->ID );
 /**
  * theme_page_header_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_header_end', $post->ID );
 ?>
@@ -49,17 +54,21 @@ do_action( 'theme_page_header_end', $post->ID );
 </header>
 <?php endif; ?>
 <div class="page-content">
+<?php if ( ! $wide_mode ) : ?>
 <div class="container">
+<?php endif; ?>
 <?php
 /**
  * theme_page_content_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_header_start', $post->ID );
 ?>
 <?php the_content(); ?>
+<?php if ( ! $wide_mode ) : ?>
 </div>
+<?php endif; ?>
 </div>
 <?php if ( Layer::have_rows( 'layers' ) ) : ?>
 <div class="page-content">
@@ -68,9 +77,9 @@ do_action( 'theme_page_header_start', $post->ID );
 /**
  * theme_page_layer_loop_start hook.
  *
- * @hooked /theme/Functions->page_layer_loop_start - 10
+ * @hooked \theme\Functions->page_layer_loop_start - 10
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_layer_loop_start', $post->ID );
 ?>
@@ -79,9 +88,9 @@ do_action( 'theme_page_layer_loop_start', $post->ID );
 /**
  * theme_page_layer_content_start hook.
  *
- * @hooked /theme/Functions->page_layer_content_start - 10
+ * @hooked \theme\Functions->page_layer_content_start - 10
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_layer_content_start', $post->ID );
 ?>
@@ -90,9 +99,9 @@ do_action( 'theme_page_layer_content_start', $post->ID );
 /**
  * theme_page_block_loop_start hook.
  *
- * @hooked /theme/Functions->start_page_block_loop - 10
+ * @hooked \theme\Functions->start_page_block_loop - 10
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_block_loop_start', $post->ID );
 ?>
@@ -103,9 +112,9 @@ do_action( 'theme_page_block_loop_start', $post->ID );
 /**
  * theme_page_block_loop_end hook.
  *
- * @hooked /theme/Functions->end_page_block_loop - 10
+ * @hooked \theme\Functions->end_page_block_loop - 10
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_block_loop_end', $post->ID );
 ?>
@@ -114,9 +123,9 @@ do_action( 'theme_page_block_loop_end', $post->ID );
 /**
  * theme_page_layer_content_end hook.
  *
- * @hooked /theme/Functions->page_layer_content_end - 10
+ * @hooked \theme\Functions->page_layer_content_end - 10
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_layer_content_end', $post->ID );
 ?>
@@ -124,9 +133,9 @@ do_action( 'theme_page_layer_content_end', $post->ID );
 /**
  * theme_page_layer_loop_end hook.
  *
- * @hooked /theme/Functions->end_page_layer_loop - 10
+ * @hooked \theme\Functions->end_page_layer_loop - 10
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_layer_loop_end', $post->ID );
 ?>
@@ -138,7 +147,7 @@ do_action( 'theme_page_layer_loop_end', $post->ID );
 /**
  * theme_page_content_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_content_end', $post->ID );
 ?>
@@ -149,7 +158,7 @@ do_action( 'theme_page_content_end', $post->ID );
 /**
  * theme_page_footer_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_footer_start', $post->ID );
 ?>
@@ -163,7 +172,7 @@ endif;
 /**
  * theme_page_footer_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_footer_end', $post->ID );
 ?>
@@ -174,7 +183,7 @@ do_action( 'theme_page_footer_end', $post->ID );
 /**
  * theme_page_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_page_end', $post->ID );
 ?>

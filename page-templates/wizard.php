@@ -15,9 +15,9 @@ __( 'Wizard', 'theme' );
 
 get_header();
 
-$pages_field = Layer::get_field( 'pages' );
+$pages = Layer::get_field( 'pages' );
 
-if ( ! $pages_field )
+if ( ! $pages )
 	return;
 
 $header = Layer::get_field( 'header' );
@@ -31,12 +31,10 @@ else
 	$page = 1;
 
 $row = 0;
-$total = ceil( count( $pages_field ) / 1 );
+$total = ceil( count( $pages ) / 1 );
 $min = ( ( $page * 1 ) - 1 ) + 1;
 $max = ( $min + 1 ) - 1;
 ?>
-<div id="content" class="site-content">
-<main id="main" class="site-main" role="main">
 <?php
 if ( is_active_sidebar( 'page-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-top' );
@@ -88,7 +86,5 @@ if ( is_active_sidebar( 'page-bottom' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-bottom' );
 endif;
 ?>
-</main>
-</div>
 <?php
 get_footer();

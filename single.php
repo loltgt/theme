@@ -11,13 +11,13 @@ namespace theme;
 
 get_header();
 ?>
-<div id="content" class="site-content">
-<main id="main" class="site-main container" role="main">
+<main id="content" class="site-content" role="main">
 <?php
 if ( is_active_sidebar( 'post-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'post-top' );
 endif;
 ?>
+<div class="container">
 <?php
 while ( have_posts() ) : the_post();
 
@@ -29,13 +29,13 @@ while ( have_posts() ) : the_post();
 
 endwhile;
 ?>
+</div>
 <?php
 if ( is_active_sidebar( 'post-bottom' ) ) :
 	get_template_part( 'template-parts/widgets', 'post-bottom' );
 endif;
 ?>
 </main>
-</div>
 
 <?php
 get_footer();

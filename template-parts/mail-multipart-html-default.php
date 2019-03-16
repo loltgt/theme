@@ -2,6 +2,8 @@
 /**
  * Mail multipart MIME html template part
  *
+ * //TODO test
+ *
  * @package theme
  * @version 1.0
  */
@@ -15,8 +17,8 @@ namespace theme;
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" width="device-width">
-<style type=3D"text/css">
-@media only screen and (min-device-width: 481px) { div[id=3D"main"] { width: 480px !important; } }
+<style type="text/css">
+@media only screen and (min-device-width: 481px) { div[id="main"] { width: 480px !important; } }
 </style>
 <!--[if mso]>
 <style>

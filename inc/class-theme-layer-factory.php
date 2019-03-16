@@ -12,7 +12,7 @@ use \theme\Theme;
 
 
 /**
- * Abstraction layer class for “acf“
+ * Abstraction layer class factory
  */
 abstract class Layer_Factory {
 

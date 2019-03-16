@@ -22,7 +22,7 @@ use \WP_Query;
  *
  * @see WP_Widget
  */
-class Widget_Recent_Posts extends WP_Widget_Recent_Posts {
+class Widget_Recent_Posts extends \WP_Widget_Recent_Posts {
 
 	/**
 	 * Sets up a new Recent Posts widget instance
@@ -69,7 +69,7 @@ class Widget_Recent_Posts extends WP_Widget_Recent_Posts {
 		 * @param array void - ‘args‘
 		 * @param array $instance
 		 */
-		$args['posts'] = new WP_Query( apply_filters( 'widget_posts_args', array(
+		$args['posts'] = new \WP_Query( apply_filters( 'widget_posts_args', array(
 			'posts_per_page' => $args['number'],
 			'no_found_rows' => true,
 			'post_status' => 'publish',

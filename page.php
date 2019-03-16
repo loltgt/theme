@@ -11,8 +11,11 @@ namespace theme;
 
 get_header();
 ?>
-<div id="content" class="site-content">
-<?php get_template_part( 'template-parts/hero' ); ?>
+<?php
+if ( has_page_hero() ) :
+	get_template_part( 'template-parts/hero' );
+endif;
+?>
 <main id="main" class="site-main" role="main">
 <?php
 if ( is_active_sidebar( 'page-top' ) ) :
@@ -41,7 +44,6 @@ if ( is_active_sidebar( 'page-bottom' ) ) :
 endif;
 ?>
 </main>
-</div>
 
 <?php
 get_footer();

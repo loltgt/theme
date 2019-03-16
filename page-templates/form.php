@@ -8,8 +8,6 @@
 
 namespace theme;
 
-use \theme\Layer;
-
 
 __( 'Form', 'theme' );
 

@@ -129,7 +129,7 @@ class Shop_WC {
 	/**
 	 * Adds default shop theme supports
 	 *
-	 * @see /WC_Frontend_Scripts::load_scripts()
+	 * @see \WC_Frontend_Scripts::load_scripts()
 	 */
 	public function wc_theme_supports() {
 		// Adds shop support
@@ -160,7 +160,7 @@ class Shop_WC {
 	 *
 	 * @see wc_get_template_part()
 	 *
-	 * @global object $wp_filter - WP_Hook
+	 * @global object $wp_filter - \WP_Hook
 	 * @param mixed $template
 	 * @return mixed $template|void
 	 */
@@ -329,7 +329,7 @@ class Shop_WC {
 	/**
 	 * Adds a classname to the content card thumbnail
 	 *
-	 * @see /WC_Product->get_image()
+	 * @see \WC_Product->get_image()
 	 *
 	 * @param string $html
 	 * @return string $html|void
@@ -398,8 +398,8 @@ class Shop_WC {
 	 *
 	 * @see ?/woocommerce/single-product/tabs/tabs.php
 	 *
-	 * @global object $product - WC_Product
-	 * @global object $post - WP_Post
+	 * @global null|object $product - \WC_Product
+	 * @global null|object $post - \WP_Post
 	 * @param array $tabs
 	 * @return array $tabs
 	 */
@@ -489,7 +489,7 @@ class Shop_WC {
 	/**
 	 * Adds column classes to checkout fields for compatibity with the css framework
 	 *
-	 * @see /WC_Checkout->get_checkout_fields()
+	 * @see \WC_Checkout->get_checkout_fields()
 	 * 
 	 * @param array $fields
 	 * @return array $fields

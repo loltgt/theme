@@ -2,8 +2,6 @@
 /**
  * Form template part
  *
- * //TODO refactoring hooks & filters
- *
  * @package theme
  * @version 1.0
  */
@@ -25,7 +23,7 @@ $form_id = get_data_ID( 'form', 'expone' );
 /**
  * theme_before_form hook.
  *
- * @hooked /theme/Functions->before_form - 10
+ * @hooked \theme\Functions->before_form - 10
  *
  * @param string|int $form_id
  */
@@ -35,7 +33,7 @@ do_action( 'theme_before_form', $form_id );
 if ( $begin = Layer::get_field( 'form_start' ) ) :
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */
@@ -47,7 +45,7 @@ endif;
 if ( $end = Layer::get_field( 'form_end' ) ) :
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */
@@ -58,8 +56,8 @@ endif;
 /**
  * theme_after_form hook.
  *
- * @hooked /theme/Functions->wizard_after_form - 10
- * @hooked /theme/Functions->after_form - 10
+ * @hooked \theme\Functions->wizard_after_form - 10
+ * @hooked \theme\Functions->after_form - 10
  *
  * @param string|int $form_id
  */

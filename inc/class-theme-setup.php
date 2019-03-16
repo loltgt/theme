@@ -82,7 +82,7 @@ class Setup {
 
 			remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
 			remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
-			// TODO verify
+			// TODO check
 			remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 
 			add_filter( 'option_use_smilies', array($this, 'option_use_smilies_override') );
@@ -189,14 +189,14 @@ class Setup {
 			'bootstrap-4',
 			get_theme_file_uri( ASSETS_BASE_PATH . '/css/lib/bootstrap/bootstrap' . $this->asset_prefix . '.css' ),
 			null,
-			'4.0.0'
+			'4.3.1'
 		);
 
 		// Owl Carousel 2
 		wp_register_style(
 			'owl-carousel-2',
 			get_theme_file_uri( ASSETS_BASE_PATH . '/css/lib/owl.carousel/owl.carousel' . $this->asset_prefix . '.css' ),
-			'2.1.6',
+			'2.3.4',
 			null
 		);
 
@@ -213,7 +213,7 @@ class Setup {
 			'bootstrap-4',
 			get_theme_file_uri( ASSETS_BASE_PATH . '/js/lib/bootstrap/bootstrap.bundle' . $this->asset_prefix . '.js' ),
 			array('jquery'),
-			'4.0.0',
+			'4.3.1',
 			true
 		);
 
@@ -222,7 +222,7 @@ class Setup {
 			'owl-carousel-2',
 			get_theme_file_uri( ASSETS_BASE_PATH . '/js/lib/owl.carousel/owl.carousel' . $this->asset_prefix . '.js' ),
 			array('jquery'),
-			'2.1.6',
+			'2.3.4',
 			true
 		);
 
@@ -262,19 +262,14 @@ class Setup {
 		wp_enqueue_style( 'bootstrap-4' );
 		wp_enqueue_style( 'owl-carousel-2' );
 
+		wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
+
+
 		wp_enqueue_script( 'bootstrap-4' );
 		wp_enqueue_script( 'owl-carousel-2' );
 
-		add_action( 'wp_head', array($this, 'default_inline_stylesheet'), 9999 );
+
 		add_action( 'wp_footer', array($this, 'default_inline_script'), 9999 );
-	}
-
-
-	/**
-	 * Output default inline stylesheet
-	 */
-	public function default_inline_stylesheet() {
-		get_template_part( 'template-parts/stylesheet-default', substr( $this->asset_prefix, 1 ) );
 	}
 
 
@@ -947,7 +942,7 @@ class Setup {
 		 * @param string $post_type
 		 * @param array $atts
 		 */
-		$query = new WP_Query( apply_filters( 'theme_post_object_args', array(
+		$query = new \WP_Query( apply_filters( 'theme_post_object_args', array(
 			'post_type' => $post_type,
 			'post_id' => $atts['id'],
 			'post_name' => $atts['name'],
@@ -967,7 +962,7 @@ class Setup {
 		 *
 		 * @param string $post_type
 		 * @param array $atts
-		 * @param object $post - WP_Post
+		 * @param object $post - \WP_Post
 		 */
 		do_action( 'theme_post_object_action', $post_type, $atts, $post );
 
@@ -1107,7 +1102,7 @@ class Setup {
 
 	/**
 	 * Loads slideshow assets,
-	 * wrapping around the /get_footer() function
+	 * wrapping around the \get_footer() function
 	 *
 	 * @static
 	 */

@@ -18,4 +18,4 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="card-columns products">
+<div class="products card-columns">

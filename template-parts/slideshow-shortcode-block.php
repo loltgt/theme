@@ -8,7 +8,7 @@
 
 namespace theme;
 
-use theme\Layer;
+use \theme\Layer;
 
 
 $atts = get_query_var( 'shortcode_atts' );
@@ -28,7 +28,7 @@ $slideshow_id = get_data_ID( 'slideshow', 'shortcode' );
 /**
  * theme_before_slideshow hook.
  *
- * @hooked /theme/Functions->before_slideshow - 10
+ * @hooked \theme\Functions->before_slideshow - 10
  *
  * @param string|int $slideshow_id
  */

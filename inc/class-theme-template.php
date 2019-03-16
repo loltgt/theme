@@ -137,7 +137,7 @@ class Template {
 		if ( ! $page_mode )
 			return;
 
-		if ( ! is_page_template( 'page-templates/modal.php' ) && $page_mode === 'modal' ) {
+		if ( $page_mode === 'modal' && ! is_page_template( 'page-templates/modal.php' ) ) {
 			add_filter( 'template_include', array($this, 'page_mode_modal_template_override') );
 			add_filter( 'the_title', array($this, 'page_mode_modal_title') );
 			add_filter( 'the_content', array($this, 'page_mode_modal_content') );
@@ -216,6 +216,10 @@ class Template {
 		// Add class on front page
 		if ( is_front_page() && 'posts' !== get_option( 'show_on_front' ) )
 			$classes[1] = 'page-template-front-page';
+
+		// Hero (legacy support)
+		if ( has_page_hero() )
+			$classes[] = 'has-hero';
 
 		return $classes;
 	}
@@ -333,7 +337,7 @@ class Template {
 	/**
 	 * The default ID attribute
 	 *
-	 * @see /theme/get_data_ID()
+	 * @see \theme\get_data_ID()
 	 *
 	 * @param string $context
 	 * @return string void
@@ -346,7 +350,7 @@ class Template {
 	/**
 	 * Data ID attribute for gallery
 	 *
-	 * @see /theme/get_data_ID()
+	 * @see \theme\get_data_ID()
 	 *
 	 * @return int void
 	 */
@@ -360,7 +364,7 @@ class Template {
 	/**
 	 * Data ID attribute for slideshow
 	 *
-	 * @see /theme/get_data_ID()
+	 * @see \theme\get_data_ID()
 	 *
 	 * @param string $context
 	 * @return string $id
@@ -405,7 +409,7 @@ class Template {
 	/**
 	 * Data ID attribute for form
 	 *
-	 * @see /theme/get_data_ID()
+	 * @see \theme\get_data_ID()
 	 *
 	 * @param string $context
 	 * @return string $id
@@ -468,7 +472,7 @@ class Template {
 	/**
 	 * Data ID attribute for form fieldset
 	 *
-	 * @see /theme/get_data_ID()
+	 * @see \theme\get_data_ID()
 	 *
 	 * @param string $context
 	 * @return string $id
@@ -497,7 +501,7 @@ class Template {
 	/**
 	 * Data ID attribute for form field
 	 *
-	 * @see /theme/get_data_ID()
+	 * @see \theme\get_data_ID()
 	 *
 	 * @param int|array $context
 	 * @return string $id
@@ -529,7 +533,7 @@ class Template {
 	/**
 	 * Data classname attribute for page layer
 	 *
-	 * @see /theme/get_data_class()
+	 * @see \theme\get_data_class()
 	 *
 	 * @param array $classes
 	 * @return array $classes
@@ -548,7 +552,7 @@ class Template {
 	/**
 	 * Data classname attribute for page block
 	 *
-	 * @see /theme/get_data_class()
+	 * @see \theme\get_data_class()
 	 *
 	 * @param array $classes
 	 * @return array $classes
@@ -587,7 +591,7 @@ class Template {
 	/**
 	 * Data classname attribute for gallery
 	 *
-	 * @see /theme/get_data_class()
+	 * @see \theme\get_data_class()
 	 *
 	 * @param array $classes
 	 * @return array $classes
@@ -614,7 +618,7 @@ class Template {
 	/**
 	 * Data classname attribute for gallery item
 	 *
-	 * @see /theme/get_data_class()
+	 * @see \theme\get_data_class()
 	 *
 	 * @param array $classes
 	 * @return array $classes
@@ -635,7 +639,7 @@ class Template {
 	/**
 	 * Data classname attribute for slideshow
 	 *
-	 * @see /theme/get_data_class()
+	 * @see \theme\get_data_class()
 	 *
 	 * @param array $classes
 	 * @return array $classes
@@ -651,7 +655,7 @@ class Template {
 	/**
 	 * Data classname attribute for form row
 	 *
-	 * @see /theme/get_data_class()
+	 * @see \theme\get_data_class()
 	 *
 	 * @param array $classes
 	 * @return array $classes
@@ -687,7 +691,7 @@ class Template {
 	/**
 	 * Data classname attribute for form field label
 	 *
-	 * @see /theme/get_data_class()
+	 * @see \theme\get_data_class()
 	 *
 	 * @param array $classes
 	 * @return array $classes
@@ -727,7 +731,7 @@ class Template {
 	/**
 	 * Data extra attributes for page
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
 	 * @return array $params
 	 */
@@ -765,7 +769,7 @@ class Template {
 	/**
 	 * Data extra attributes for gallery
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
 	 * @return array $params
 	 */
@@ -787,7 +791,7 @@ class Template {
 	/**
 	 * Data extra attributes for slideshow
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
 	 * @return array $params
 	 */
@@ -811,7 +815,7 @@ class Template {
 	/**
 	 * Data extra attributes for video slide
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 * 
 	 * @return array $params
 	 */
@@ -834,7 +838,7 @@ class Template {
 	/**
 	 * Data extra attributes for slide caption
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
 	 * @return array $params
 	 */
@@ -868,7 +872,7 @@ class Template {
 	/**
 	 * Data extra attributes for form
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 * 
 	 * @return array $params
 	 */
@@ -913,7 +917,7 @@ class Template {
 	/**
 	 * Data extras attributes for form fieldset
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
 	 * @param array|null $params
 	 * @param string $type
@@ -959,7 +963,7 @@ class Template {
 	/**
 	 * Data extras attributes for form field
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
 	 * @param array|null $params
 	 * @param string $type
@@ -1045,7 +1049,7 @@ class Template {
 	/**
 	 * Data extras attributes for form button
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
 	 * @param array|null $params
 	 * @param string $type
@@ -1097,7 +1101,7 @@ class Template {
 	/**
 	 * Data extras attributes for form field select option
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
 	 * @param array|null $params
 	 * @param string $type
@@ -1123,9 +1127,9 @@ class Template {
 	/**
 	 * Data extra attributes for wizard form
 	 *
-	 * @see /theme/get_data_extras()
+	 * @see \theme\get_data_extras()
 	 *
-	 * @global object $post - WP_Post
+	 * @param null|object $post - \WP_Post
 	 * @param array|null $params
 	 * @return array $params
 	 */
@@ -1265,7 +1269,7 @@ class Template {
 	 *
 	 * @see the_title()
 	 *
-	 * @global object $post - WP_Post
+	 * @param null|object $post - \WP_Post
 	 * @param string $title
 	 * @return string $title
 	 */
@@ -1810,7 +1814,7 @@ class Template {
 	 * for “wp-bootstrap-navwalker“
 	 *
 	 * @see wp_nav_menu()
-	 * @see /WP_Bootstrap_Navwalker->start_el()
+	 * @see \WP_Bootstrap_Navwalker->start_el()
 	 *
 	 * @param string items
 	 * @return string void
@@ -1844,7 +1848,7 @@ class Template {
 	/**
 	 * Removes inline styles from the Tag Cloud Widget
 	 *
-	 * @see /WP_Widget_Tag_Cloud->widget()
+	 * @see \WP_Widget_Tag_Cloud->widget()
 	 * @see wp_tag_cloud()
 	 * @see wp_generate_tag_cloud()
 	 *
@@ -1863,7 +1867,7 @@ class Template {
 	 *
 	 * @see get_body_class()
 	 *
-	 * @global object $post - WP_Post
+	 * @param null|object $post - \WP_Post
 	 * @param array $classes
 	 * @return array $classes
 	 */
@@ -1910,7 +1914,7 @@ class Template {
 	 *
 	 * @see get_post_class()
 	 *
-	 * @global object $post - WP_Post
+	 * @param null|object $post - \WP_Post
 	 * @param array $classes
 	 * @param mixed $class
 	 * @return array $classes
@@ -1938,7 +1942,7 @@ class Template {
 	/**
 	 * Removes the post ID from menu item element id when unexpone option is enabled
 	 *
-	 * @see /Walker_Nav_Menu
+	 * @see \Walker_Nav_Menu
 	 *
 	 * @global string $item_id
 	 * @param object $item - \WP_Post
@@ -1961,10 +1965,10 @@ class Template {
 	 *
 	 * //TODO FIX (es. 'menu-item-object-custom' ERR)
 	 *
-	 * @see /Walker_Nav_Menu
+	 * @see \Walker_Nav_Menu
 	 *
 	 * @global array $classes
-	 * @param object $item - WP_Post
+	 * @param object $item - \WP_Post
 	 * @return string $item_id
 	 */
 	public function unexpone_id_nav_menu_item_class( $classes, $item ) {
@@ -2009,9 +2013,9 @@ class Template {
 	/**
 	 * The default data ID with slug
 	 *
-	 * @see /theme/get_data_ID()
+	 * @see \theme\get_data_ID()
 	 *
-	 * @global object $post - WP_Post
+	 * @param null|object $post - \WP_Post
 	 * @param string $context
 	 * @return string void
 	 */

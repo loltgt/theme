@@ -121,33 +121,33 @@ class Options {
 	 */
 	public function create_options_subpage( $page_title, $menu_title, $menu_slug, $settings_callback, $page_callback ) {
 		if ( empty( $page_title ) )
-			throw new Exception( '/theme/Options->create_options_subpage() : ' . 
+			throw new Exception( '\theme\Options->create_options_subpage() : ' . 
 				'Missing \'page_title\' argument.' );
 
 		if ( empty( $menu_title) )
-			throw new Exception( '/theme/Options->create_options_subpage() : ' .
+			throw new Exception( '\theme\Options->create_options_subpage() : ' .
 				'Missing \'menu_title\' argument.' );
 
 		if ( empty( $menu_slug ) )
-			throw new Exception( '/theme/Options->create_options_subpage() : ' .
+			throw new Exception( '\theme\Options->create_options_subpage() : ' .
 				'Missing \'menu_slug\' argument.' );
 
 		if ( empty( $settings_callback ) )
-			throw new Exception( '/theme/Options->create_options_subpage() : ' .
+			throw new Exception( '\theme\Options->create_options_subpage() : ' .
 				'Missing \'settings_callback\' argument.' );
 
 
 		if ( empty( $page_callback ) )
-			throw new Exception( '/theme/Options->create_options_subpage() : ' .
+			throw new Exception( '\theme\Options->create_options_subpage() : ' .
 				'Missing \'page_callback\' argument.' );
 
 		if ( ! is_callable( $settings_callback ) )
-			throw new Exception( '/theme/Options->create_options_subpage() : ' .
+			throw new Exception( '\theme\Options->create_options_subpage() : ' .
 				'Bad \'settings_callback\' argument.' );
 
 
 		if ( ! is_callable( $page_callback ) )
-			throw new Exception( '/theme/Options->create_options_subpage() : ' .
+			throw new Exception( '\theme\Options->create_options_subpage() : ' .
 				'Bad \'page_callback\' argument.' );
 
 		add_submenu_page(
@@ -191,7 +191,7 @@ class Options {
 		/**
 		 * theme_settings_begin hook.
 		 *
-		 * @param object $this - /theme/Options
+		 * @param object $this - \theme\Options
 		 */
 		do_action( 'theme_settings_begin', $this );
 
@@ -249,7 +249,7 @@ class Options {
 		/**
 		 * theme_settings_frontend_section hook.
 		 *
-		 * @param object $this - /theme/Options
+		 * @param object $this - \theme\Options
 		 */
 		do_action( 'theme_settings_frontend_section', $this );
 
@@ -307,7 +307,7 @@ class Options {
 		/**
 		 * theme_settings_backend_section hook.
 		 *
-		 * @param object $this - /theme/Options
+		 * @param object $this - \theme\Options
 		 */
 		do_action( 'theme_settings_backend_section', $this );
 
@@ -404,7 +404,7 @@ class Options {
 		/**
 		 * theme_settings_advanced_section hook.
 		 *
-		 * @param object $this - /theme/Options
+		 * @param object $this - \theme\Options
 		 */
 		do_action( 'theme_settings_advanced_section', $this );
 
@@ -412,7 +412,7 @@ class Options {
 		/**
 		 * theme_settings_end hook.
 		 *
-		 * @param object $this - /theme/Options
+		 * @param object $this - \theme\Options
 		 */
 		do_action( 'theme_settings_end', $this );
 	}
@@ -531,7 +531,7 @@ class Options {
 	 */
 	public function get_name( $name ) {
 		if ( empty( $name ) )
-			throw new Exception( '/theme/Options->get_name() : Missing \'name\' argument.' );
+			throw new Exception( '\theme\Options->get_name() : Missing \'name\' argument.' );
 
 		return $this->option_name . '[' . $name . ']';
 	}
@@ -546,7 +546,7 @@ class Options {
 	 */
 	public function get_value( $name, $default = '' ) {
 		if ( empty( $name ) )
-			throw new Exception( '/theme/Options->get_value() : Missing \'value\' argument.' );
+			throw new Exception( '\theme\Options->get_value() : Missing \'value\' argument.' );
 
 		if ( isset( $this->options[$name] ) )
 			return $this->options[$name];
@@ -568,13 +568,13 @@ class Options {
 	 */
 	public function add_settings_field_sanitize( $slug, $type = '', $required = false, $name = '', $callback = null ) {
 		if ( empty( $slug ) )
-			throw new Exception( '/theme/Options->add_settings_field_sanitize() : Missing \'slug\' argument.' );
+			throw new Exception( '\theme\Options->add_settings_field_sanitize() : Missing \'slug\' argument.' );
 
 		if ( empty( $type ) )
-			throw new Exception( '/theme/Options->add_settings_field_sanitize() : Missing \'type\' argument.' );
+			throw new Exception( '\theme\Options->add_settings_field_sanitize() : Missing \'type\' argument.' );
 
 		if ( ! empty( $callback ) && ! is_callable( $callback ) )
-			throw new Exception( '/theme/Options->add_settings_field_sanitize() : Bad \'callback\' argument.' );
+			throw new Exception( '\theme\Options->add_settings_field_sanitize() : Bad \'callback\' argument.' );
 
 		$name = esc_attr( empty( $name ) ? $slug : $name );
 		$sanitize = array( 'slug' => esc_attr( $slug ) );
@@ -603,7 +603,7 @@ class Options {
 			break;
 
 			default :
-				throw new Exception( '/theme/Options->add_settings_field_sanitize() : Bad \'type\' argument.' );
+				throw new Exception( '\theme\Options->add_settings_field_sanitize() : Bad \'type\' argument.' );
 		}
 
 		if ( $required )
@@ -624,7 +624,7 @@ class Options {
 	 */
 	public function description_render( $args ) {
 		if ( empty( $args['description'] ) )
-			throw new Exception( '/theme/Options->description_render() : ' .
+			throw new Exception( '\theme\Options->description_render() : ' .
 				'Missing args[\'description\'] argument.' );
 
 		if ( isset( $args['description_html'] ) ) {
@@ -648,11 +648,11 @@ class Options {
 	 */
 	public function label_field_render( $args ) {
 		if ( empty( $args['name'] ) )
-			throw new Exception( '/theme/Options->label_field_render() : ' .
+			throw new Exception( '\theme\Options->label_field_render() : ' .
 				'Missing args[\'name\'] argument.' );
 
 		if ( empty( $args['title'] ) )
-			throw new Exception( '/theme/Options->label_field_render() : ' .
+			throw new Exception( '\theme\Options->label_field_render() : ' .
 				'Missing args[\'title\'] argument.' );
 
 		$args = wp_parse_args( $args, array('label_for' => null) );
@@ -677,7 +677,7 @@ class Options {
 	 */
 	public function text_field_render( $args ) {
 		if ( empty( $args['name'] ) )
-			throw new Exception( '/theme/Options->text_field_render() :' .
+			throw new Exception( '\theme\Options->text_field_render() :' .
 				'Missing args[\'name\'] argument' );
 
 		$args = wp_parse_args( $args, array('value' => '') );
@@ -702,7 +702,7 @@ class Options {
 	 */
 	public function checkbox_field_render( $args ) {
 		if ( empty( $args['name'] ) )
-			throw new Exception( '/theme/Options->checkbox_field_render() : ' . 
+			throw new Exception( '\theme\Options->checkbox_field_render() : ' . 
 				'Missing args[\'name\'] argument.' );
 
 		$args = wp_parse_args( $args, array('value' => 0, 'default' => 0) );
@@ -731,7 +731,7 @@ class Options {
 	 */
 	public function radio_field_render( $args ) {
 		if ( empty( $args['name'] ) )
-			throw new Exception( '/theme/Options->radio_field_render() : ' .
+			throw new Exception( '\theme\Options->radio_field_render() : ' .
 				'Missing args[\'name\'] argument.' );
 
 		$args = wp_parse_args( $args, array('value' => 0, 'default' => 0) );
@@ -756,7 +756,7 @@ class Options {
 	 */
 	public function textarea_field_render( $args ) {
 		if ( empty( $args['name'] ) )
-			throw new Exception( '/theme/Options->textarea_field_render() : ' .
+			throw new Exception( '\theme\Options->textarea_field_render() : ' .
 				'Missing args[\'name\'] argument' );
 
 		$args = wp_parse_args( $args, array('value' => '') );
@@ -781,15 +781,15 @@ class Options {
 	 */
 	public function select_field_render( $args ) {
 		if ( empty( $args['name'] ) )
-			throw new Exception( '/theme/Options->select_field_render() : ' .
+			throw new Exception( '\theme\Options->select_field_render() : ' .
 				'Missing args[\'name\'] argument.' );
 
 		if ( empty( $args['options'] ) )
-			throw new Exception( '/theme/Options->select_field_render() : ' . 
+			throw new Exception( '\theme\Options->select_field_render() : ' . 
 				'Missing args[\'options\'] argument' );
 
 		if ( ! is_array( $args['options'] ) )
-			throw new Exception( '/theme/Options->select_field_render() : ' . 
+			throw new Exception( '\theme\Options->select_field_render() : ' . 
 				'Bad args[\'options\'] argument' );
 
 		$args = wp_parse_args( $args, array('value' => '', 'default' => '') );
@@ -823,11 +823,11 @@ class Options {
 	 */
 	public function group_field_render( $args ) {
 		if ( empty( $args['name'] ) )
-			throw new Exception( '/theme/Options->group_field_render() : ' . 
+			throw new Exception( '\theme\Options->group_field_render() : ' . 
 				'Missing args[\'name\'] argument.' );
 
 		if ( empty( $args['fields'] ) )
-			throw new Exception( '/theme/Options->group_field_render() : ' . 
+			throw new Exception( '\theme\Options->group_field_render() : ' . 
 				'Missing args[\'fields\'] argument.' );
 
 		$args = wp_parse_args( $args, array('value' => '') );
@@ -879,11 +879,11 @@ class Options {
 	 */
 	public function repeatable_field_render( $args ) {
 		if ( empty( $args['name'] ) )
-			throw new Exception( '/theme/Options->repeatable_field_render() : ' .
+			throw new Exception( '\theme\Options->repeatable_field_render() : ' .
 				'Missing args[\'name\'] argument.' );
 
 		if ( empty( $args['fields'] ) )
-			throw new Exception( '/theme/Options->repeatable_field_render() : ' .
+			throw new Exception( '\theme\Options->repeatable_field_render() : ' .
 				'Missing args[\'fields\'] argument.' );
 
 		$args = wp_parse_args( $args, array(

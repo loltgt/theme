@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
  * theme_wc_subcategory_begin
  *
  * @param array $category
- * @hooked /theme/Shop_WC/wc_template_loop_product_link - 10
+ * @hooked \theme\Shop_WC\wc_template_loop_product_link - 10
  */
 do_action( 'theme_wc_subcategory_begin', $category );
 ?>
@@ -55,7 +55,7 @@ do_action( 'woocommerce_before_subcategory_title', $category );
  * woocommerce_shop_loop_subcategory_title hook.
  *
  * @param array $category
- * @hooked /theme/Shop_WC/wc_template_loop_category_link - 10
+ * @hooked \theme\Shop_WC\wc_template_loop_category_link - 10
  */
 do_action( 'woocommerce_shop_loop_subcategory_title', $category );
 

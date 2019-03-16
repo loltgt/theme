@@ -8,7 +8,7 @@
 
 namespace theme;
 
-use theme\Layer;
+use \theme\Layer;
 
 
 $enable_tpp = Layer::get_field( 'enable_slideshow_tpp' );
@@ -23,7 +23,7 @@ $slideshow_id = get_data_ID( 'slideshow' );
 /**
  * theme_before_slideshow hook.
  *
- * @hooked /theme/Functions->before_slideshow - 10
+ * @hooked \theme\Functions->before_slideshow - 10
  *
  * @param string|int $slideshow_id
  */

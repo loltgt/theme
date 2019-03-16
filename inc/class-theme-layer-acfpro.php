@@ -13,7 +13,7 @@ namespace theme;
 
 
 /**
- * Abstraction layer class for “acf“
+ * Abstraction layer class for “acf pro“
  */
 abstract class Layer_ACFPRO {
 

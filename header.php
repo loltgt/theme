@@ -37,6 +37,6 @@ endif;
 /**
  * theme_print_notices hook.
  *
- * @hooked /theme/Functions->print_notices - 10
+ * @hooked \theme\Functions->print_notices - 10
  */
 do_action( 'theme_print_notices' );

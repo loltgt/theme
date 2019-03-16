@@ -21,7 +21,7 @@ use \WP_Widget_Recent_Comments;
  *
  * @see WP_Widget
  */
-class Widget_Recent_Comments extends WP_Widget_Recent_Comments {
+class Widget_Recent_Comments extends \WP_Widget_Recent_Comments {
 
 	/**
 	 * Sets up a new Recent Comments widget instance.

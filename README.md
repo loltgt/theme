@@ -26,7 +26,7 @@ Read the documentation here: https://github.com/loltgt/theme/wiki
 
 - [ ] Enhance the abstraction layer (\theme\Layer)
 - [ ] Add support to other field libraries in layer (\theme\Layer)
-- [ ] Form hooks and filters refactoring
+- [ ] Implement repeatable fields js (\theme\Options)
 - [ ] Fix TODO list
 - [ ] Build the Slideshow block (Gutenberg)
 - [ ] Build the Form block (Gutenberg)
@@ -63,4 +63,4 @@ You can open issues to report bug, request features or send a Pull Request.
 
 [GPL-2.0-or-later](LICENSE)
 
-Some contents under "src" folder are dual licensed (MIT OR GPL-2.0-or-later).
+Some contents in "src" folder are dual licensed (MIT OR GPL-2.0-or-later).

@@ -14,7 +14,7 @@
 
 /**
  * Builds the navigation to next/previous post matching the css framework behaviour, 
- * overrides the built-in /get_the_post_navigation() function
+ * overrides the built-in \get_the_post_navigation() function
  *
  * @see /wp-includes/link-template.php
  *
@@ -109,7 +109,7 @@ if ( ! function_exists( '\theme\get_the_post_navigation' ) ) {
 
 /**
  * Displays the navigation to next/previous post matching the css framework behaviour, 
- * overrides the built-in /the_post_navigation() function
+ * overrides the built-in \the_post_navigation() function
  *
  * @see /wp-includes/link-template.php
  *
@@ -124,11 +124,11 @@ if ( ! function_exists( '\theme\the_post_navigation' ) ) {
 
 /**
  * Builds the navigation to next/previous set of posts matching the css framework behaviour, 
- * overrides the built-in /get_the_posts_navigation() function
+ * overrides the built-in \get_the_posts_navigation() function
  *
  * @see /wp-includes/link-template.php
  *
- * @global object $wp_query - WP_Query
+ * @global object $wp_query - \WP_Query
  * @param array $args
  * @return string $navigation
  */
@@ -195,7 +195,7 @@ if ( ! function_exists( '\theme\get_the_posts_navigation' ) ) {
 
 /**
  * Displays the navigation to next/previous set of posts matching the css framework behaviour, 
- * overrides the built-in /get_posts_navigation() function
+ * overrides the built-in \get_posts_navigation() function
  *
  * @see /wp-includes/link-template.php
  *
@@ -210,11 +210,11 @@ if ( ! function_exists( '\theme\the_posts_navigation' ) ) {
 
 /**
  * Builds the paginated navigation to adjacent posts matching the css framework behaviour, 
- * overrides the built-in /get_the_posts_pagination() function
+ * overrides the built-in \get_the_posts_pagination() function
  *
  * @see /wp-includes/link-template.php
  *
- * @global object $wp_query - WP_Query
+ * @global object $wp_query - \WP_Query
  * @param array $args
  * @return string $navigation
  */
@@ -255,7 +255,7 @@ if ( ! function_exists( '\theme\get_the_posts_pagination' ) ) {
 
 /**
  * Displays the paginated navigation to adjacent posts matching the css framework behaviour, 
- * overrides the built-in /the_posts_pagination() function
+ * overrides the built-in \the_posts_pagination() function
  *
  * @see /wp-includes/link-template.php
  *
@@ -270,7 +270,7 @@ if ( ! function_exists( '\theme\the_posts_pagination' ) ) {
 
 /**
  * Builds the navigation to next/previous set of comments matching the css framework behaviour, 
- * overrides the built-in /get_the_comments_navigation() function
+ * overrides the built-in \get_the_comments_navigation() function
  *
  * @see /wp-includes/link-template.php
  *
@@ -331,7 +331,7 @@ if ( ! function_exists( '\theme\get_the_comments_navigation' ) ) {
 
 /**
  * Displays the navigation to next/previous set of comments matching the css framework behaviour, 
- * overrides the built-in /the_comments_navigation() function
+ * overrides the built-in \the_comments_navigation() function
  *
  * @see /wp-includes/link-template.php
  *
@@ -346,7 +346,7 @@ if ( ! function_exists( '\theme\the_comments_navigation' ) ) {
 
 /**
  * Builds the paginated navigation to adjacent comments matching the css framework behaviour, 
- * overrides the built-in /get_the_comments_pagination() function
+ * overrides the built-in \get_the_comments_pagination() function
  *
  * @see /wp-includes/link-template.php
  *
@@ -386,7 +386,7 @@ if ( ! function_exists( '\theme\get_the_comments_pagination' ) ) {
 
 /**
  * Displays the paginated navigation to adjacent comments matching the css framework behaviour, 
- * overrides the built-in /the_comments_pagination() function
+ * overrides the built-in \the_comments_pagination() function
  *
  * @see /wp-includes/link-template.php
  *
@@ -448,7 +448,7 @@ if ( ! function_exists( '\theme\the_edit_link' ) ) {
 		 * Filters edit link
 		 *
 		 * @param string $link
-		 * @param int void - WP_Post
+		 * @param int void - \WP_Post
 		 * @param string $label
 		 */
 		$edit_link = apply_filters( 'edit_post_link', $edit_link, get_the_ID(), $label );
@@ -747,7 +747,7 @@ if ( ! function_exists( '\theme\the_post_footer' ) ) {
 /**
  * Gets the entry post thumbnail
  *
- * @param object|mixed $post - WP_Post
+ * @param object|mixed $post - \WP_Post
  * @param string $size
  * @param array|string $attr
  * @return string $r
@@ -771,7 +771,7 @@ if ( ! function_exists( '\theme\get_the_entry_post_thumbnail' ) ) {
 /**
  * Displays the entry post thumbnail
  *
- * @param object|mixed $post - WP_Post
+ * @param object|mixed $post - \WP_Post
  * @param string $size
  * @param array|string $attr
  */

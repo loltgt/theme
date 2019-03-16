@@ -23,7 +23,7 @@ if ( has_nav_menu( 'primary' ) ) :
 		'menu_id' => 'menu-primary',
 		'menu_class' => 'navbar-nav',
 		'container' => 'div',
-		'container_class' => 'container',//'collapse navbar-collapse',
+		'container_class' => 'container',/*'collapse navbar-collapse',*/
 		'depth' => 2,
 		'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
 		'walker' => new WP_Bootstrap_Navwalker()

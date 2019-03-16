@@ -9,6 +9,7 @@
  namespace theme;
 
  use \theme\Functions;
+ use \theme\Layer;
 
 
 /**
@@ -24,9 +25,38 @@ function get_page_mode() {
 
 
 /**
+ * Conditional tag for page mode
+ *
+ * @see \theme\Functions::page_mode()
+ *
+ * @param string $page_mode
+ * @return boolean void
+ */
+function is_page_mode( $page_mode = '' ) {
+	if ( $page_mode === Functions::get_page_mode() )
+		return true;
+
+	return false;
+}
+
+
+/**
+ * Conditional tag to detect page hero (legacy support)
+ *
+ * @return string|null void
+ */
+function has_page_hero() {
+	if ( Layer::get_field( 'enable_slideshow_tpp' ) || Layer::get_field( 'slides' ) )
+		return true;
+
+	return false;
+}
+
+
+/**
  * Gets the page template name
  *
- * @param int|object $post - WP_Post
+ * @param int|object $post - \WP_Post
  * @return string|null void
  */
 function get_page_template_name( $post = null ) {
@@ -197,7 +227,7 @@ function the_data_extras( $name = 'default', $type = '', $defaults = array(), $a
 
 /**
  * Creates paginated links matching the css framework behaviour, 
- * overrides the built-in /paginate_links() function
+ * overrides the built-in \paginate_links() function
  *
  * @see /wp-includes/general-template.php
  *
@@ -290,7 +320,7 @@ function paginate_links( $src_args = '' ) {
 
 /**
  * Creates paginated links for the comments matching the css framework behaviour, 
- * overrides the built-in /paginate_comments_link() function
+ * overrides the built-in \paginate_comments_link() function
  *
  * @see /wp-includes/comments-template.php
  *
@@ -345,7 +375,7 @@ function paginate_comments_links( $args = array() ) {
 function get_post_objects() {
 	/**
 	 * Filters the post content,
-	 * from /the_content()
+	 * from \the_content()
 	 *
 	 * @param string $content
 	 */

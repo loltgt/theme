@@ -3989,8 +3989,10 @@ acf_add_local_field_group(array(
 			),
 			'choices' => array(
 				'modal' => _x( 'modale', 'field-choices', 'theme' ),
+				'wide' => _x( 'larghezza piena', 'field-choices', 'theme' ),
 			),
 			'default_value' => array(
+				'',
 			),
 			'allow_null' => 1,
 			'multiple' => 0,

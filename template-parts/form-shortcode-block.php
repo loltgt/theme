@@ -28,7 +28,7 @@ $form_id = get_data_ID( 'form', 'shortcode' );
 /**
  * theme_before_form hook.
  *
- * @hooked /theme/Functions->before_form - 10
+ * @hooked \theme\Functions->before_form - 10
  *
  * @param string|int $form_id
  */
@@ -39,8 +39,8 @@ do_action( 'theme_before_form', $form_id );
 /**
  * theme_after_form hook.
  *
- * @hooked /theme/Functions->wizard_after_form - 10
- * @hooked /theme/Functions->after_form - 10
+ * @hooked \theme\Functions->wizard_after_form - 10
+ * @hooked \theme\Functions->after_form - 10
  *
  * @param string|int $form_id
  */

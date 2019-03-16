@@ -15,8 +15,6 @@
  * @version 3.4.0
  */
 
-namespace theme;
-
 defined( 'ABSPATH' ) || exit;
 
 global $product;
@@ -31,8 +29,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 /**
  * theme_wc_shop_loop_item_begin hook.
  *
- * @param object $product - WC_Product
- * @hooked /theme/Shop_WC/wc_template_loop_category_link - 10
+ * @param object $product - \WC_Product
+ * @hooked \theme\Shop_WC\wc_template_loop_category_link - 10
  */
 do_action( 'theme_wc_shop_loop_item_begin', $product );
 ?>
@@ -60,8 +58,8 @@ do_action( 'woocommerce_before_shop_loop_item_title' );
 /**
  * woocommerce_shop_loop_item_title hook.
  *
- * @hooked /theme/Shop_WC/wc_template_loop_edit_link - 5
- * @hooked /theme/Shop_WC/wc_template_loop_product_title - 10
+ * @hooked \theme\Shop_WC\wc_template_loop_edit_link - 5
+ * @hooked \theme\Shop_WC\wc_template_loop_product_title - 10
  * @hooked woocommerce_template_loop_rating - 15
  */
 do_action( 'woocommerce_shop_loop_item_title' );
@@ -94,7 +92,7 @@ do_action( 'woocommerce_after_shop_loop_item' );
 /**
  * theme_wc_shop_loop_item_end hook.
  *
- * @param object $product - WC_Product
+ * @param object $product - \WC_Product
  */
 do_action( 'theme_wc_shop_loop_item_end', $product );
 ?>

@@ -2,13 +2,15 @@
 /**
  * Template Name: Nest
  *
+ *
+ * @global null|object $post - \WP_Post
+ * @global null|int $page_id
+ *
  * @package theme
  * @version 1.0
  */
 
 namespace theme;
-
-use \theme\Layer;
 
 
 __( 'Nest', 'theme' );
@@ -20,13 +22,12 @@ $page_id = empty( $page_id ) ? $post->ID : $page_id;
 
 get_header();
 ?>
-<div id="content" class="site-content">
 <?php
-if ( Layer::have_rows( 'hero' ) ) :
+if ( has_page_hero() ) :
 	get_template_part( 'template-parts/hero' );
 endif;
 ?>
-<main id="main" class="site-main" role="main">
+<main id="content" class="site-content" role="main">
 <?php
 while ( have_posts() ) : the_post();
 
@@ -54,7 +55,6 @@ while ( have_posts() ) : the_post();
 endwhile;
 ?>
 </main>
-</div>
 
 <?php
 get_footer();

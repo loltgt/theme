@@ -15,9 +15,12 @@ $page_dispose = get_theme_mod( 'page_dispose', 'ltr' );
 
 get_header();
 ?>
-<div id="content" class="site-content">
-<?php get_template_part( 'template-parts/hero' ); ?>
-<main id="main" class="site-main" role="main">
+<?php
+if ( has_page_hero() ) :
+	get_template_part( 'template-parts/hero' );
+endif;
+?>
+<main id="content" class="site-content" role="main">
 <?php
 if ( is_active_sidebar( 'page-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-top' );
@@ -56,7 +59,6 @@ if ( is_active_sidebar( 'page-bottom' ) ) :
 endif;
 ?>
 </main>
-</div>
 
 <?php
 get_footer();

@@ -138,10 +138,10 @@ class Theme {
 	 */
 	public static function register( $class_name, $instance, $context = 0 ) {
 		if ( ! is_int( $context ) && ! is_string( $context ) )
-			throw new Exception( '/theme/Theme::register() : Bad \'context\' argument.' );
+			throw new Exception( '\theme\Theme::register() : Bad \'context\' argument.' );
 
 		if ( ! class_exists( "\\" . __NAMESPACE__ . "\\{$class_name}" ) )
-			throw new Exception( '/theme/Theme::register() : Class not exists.' );
+			throw new Exception( '\theme\Theme::register() : Class not exists.' );
 
 		self::$_instance->_context[$class_name] = $context;
 		self::$_instance->{$class_name} = $instance;

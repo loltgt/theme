@@ -15,8 +15,6 @@
  * @version 3.4.0
  */
 
-namespace theme;
-
 defined( 'ABSPATH' ) || exit;
 ?>
 

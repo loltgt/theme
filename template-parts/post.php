@@ -2,6 +2,9 @@
 /**
  * Post template part
  *
+ *
+ * @global null|object $post - \WP_Post
+ *
  * @package theme
  * @version 1.0
  */
@@ -25,7 +28,7 @@ global $post;
 /**
  * theme_post_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_start', $post->ID );
 ?>
@@ -34,7 +37,7 @@ do_action( 'theme_post_start', $post->ID );
 /**
  * theme_post_header_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_header_start', $post->ID );
 ?>
@@ -57,7 +60,7 @@ endif;
 /**
  * theme_post_header_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_header_end', $post->ID );
 ?>
@@ -67,7 +70,7 @@ do_action( 'theme_post_header_end', $post->ID );
 /**
  * theme_post_content_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_content_start', $post->ID );
 ?>
@@ -81,7 +84,7 @@ the_content( sprintf(
 /**
  * theme_post_content_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_content_end', $post->ID );
 ?>
@@ -92,7 +95,7 @@ do_action( 'theme_post_content_end', $post->ID );
 /**
  * theme_post_footer_start hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_footer_start', $post->ID );
 ?>
@@ -109,7 +112,7 @@ wp_link_pages();
 /**
  * theme_post_footer_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_footer_end', $post->ID );
 ?>
@@ -119,7 +122,7 @@ do_action( 'theme_post_footer_end', $post->ID );
 /**
  * theme_post_end hook.
  *
- * @param int $post->ID - WP_Post
+ * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_end', $post->ID );
 ?>

@@ -14,7 +14,7 @@ use \theme\Layer;
 /**
  * theme_load_slideshow_assets hook.
  *
- * @hooked /theme/Setup->load_slideshow_assets - 10
+ * @hooked \theme\Setup->load_slideshow_assets - 10
  */
 do_action( 'theme_load_slideshow_assets' );
 
