@@ -128,15 +128,15 @@ do_action( 'woocommerce_before_cart' ); ?>
 </form>
 
 <div class="cart-collaterals">
-	<?php
-		/**
-		 * Cart collaterals hook.
-		 *
-		 * @hooked woocommerce_cross_sell_display
-		 * @hooked woocommerce_cart_totals - 10
-		 */
-		do_action( 'woocommerce_cart_collaterals' );
-	?>
+<?php
+/**
+ * Cart collaterals hook.
+ *
+ * @hooked woocommerce_cross_sell_display
+ * @hooked woocommerce_cart_totals - 10
+ */
+do_action( 'woocommerce_cart_collaterals' );
+?>
 </div>
 
 <form class="woocommerce-cart-form__after-table" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">

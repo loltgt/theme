@@ -66,7 +66,7 @@ defined( 'ABSPATH' ) || exit;
 			</tr>
 		<?php endforeach; ?>
 
-		<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
+		<?php if ( WC()->cart->show_shipping() && WC()->cart->needs_shipping() ) : ?>
 
 			<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
 
