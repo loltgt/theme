@@ -389,6 +389,11 @@ class Shop_WC {
 	 * @see ?/woocommerce/single-product/product-attributes.php
 	 */
 	public function wc_template_single_product_description() {
+
+		// Restoring wpautop filter
+		// :WORKAROUND
+		add_filter( 'the_content', 'wpautop' );
+
 		wc_get_template( 'single-product/theme__description.php' );
 	}
 
