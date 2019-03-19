@@ -680,6 +680,8 @@ class Functions {
 			$request
 		);
 
+		$err = count( $errors );
+
 		/**
 		 * Filters the mail body
 		 *
@@ -687,16 +689,18 @@ class Functions {
 		 * @param string $form_id
 		 * @param array $form
 		 * @param array $fields
+		 * @param bool $err
 		 */
 		$body = apply_filters(
 			'theme_send_form_body',
 			$body,
 			$form_id,
 			$form,
-			$fields
+			$fields,
+			$err
 		);
 
-		if ( count( $errors ) )
+		if ( $err )
 			return $this->send_form_response( false, $errors );
 
 		/**
