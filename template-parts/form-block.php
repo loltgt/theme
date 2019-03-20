@@ -2,8 +2,6 @@
 /**
  * Form block template part
  *
- * //TODO refactoring hooks & filters
- *
  * @package theme
  * @version 1.0
  */

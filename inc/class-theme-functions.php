@@ -317,8 +317,6 @@ class Functions {
 	/**
 	 * Workaround to display the selected page template in the front page
 	 *
-	 * //TODO review
-	 *
 	 * @see get_front_page_template()
 	 * @see get_query_template()
 	 *

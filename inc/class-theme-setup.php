@@ -27,11 +27,18 @@ class Setup {
 	// @type string $suffix
 	public $asset_suffix;
 
+	// @type bool $wp5
+	public $wp5;
+
 
 	/**
 	 * Function __construct
+	 *
+	 * @global string $wp_version
 	 */
 	function __construct() {
+
+		global $wp_version;
 
 		$this->theme = Theme::instance();
 
@@ -42,6 +49,8 @@ class Setup {
 			$this->asset_prefix = '';
 			$this->asset_suffix = '?' . time();
 		}
+
+		$this->wp5 = version_compare( $wp_version, '5', '>=' );
 
 		add_action( 'after_setup_theme', array($this, 'initialize') );
 		add_action( 'after_setup_theme', array($this, 'register_widgets'), 999 );

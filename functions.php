@@ -264,10 +264,10 @@ new Theme;
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-options.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-functions.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-layer.php';
-require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-template.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-setup.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-admin.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-customizer.php';
+require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-template.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-shop-wc.php';
 
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/template-functions.php';

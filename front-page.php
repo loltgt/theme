@@ -2,8 +2,6 @@
 /**
  * Front page template
  *
- * //TODO review
- *
  * @package theme
  * @version 1.0
  */

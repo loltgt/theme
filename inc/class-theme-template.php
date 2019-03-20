@@ -52,8 +52,6 @@ class Template {
 		add_filter( 'excerpt_more', array($this, 'excerpt_more') );
 		add_filter( 'wp_get_attachment_link', array($this, 'attachment_link_class') );
 		add_filter( 'post_thumbnail_html', array($this, 'post_thumbnail_html_sizes'), 10, 4 );
-		add_filter( 'get_image_tag', array($this, 'get_image_tag'), 10, 4 );
-		add_filter( 'image_send_to_editor', array($this, 'image_send_to_editor'), 10, 3 );
 		add_filter( 'get_calendar', array($this, 'get_calendar') );
 		add_filter( 'show_recent_comments_widget_style', '__return_false' );
 		add_filter( 'wp_generate_tag_cloud', array($this, 'remove_tag_cloud_inline_styles') );
@@ -112,6 +110,11 @@ class Template {
 		add_filter( 'previous_posts_link_attributes', array($this, 'navigation_link_prev_class') );
 		add_filter( 'next_posts_link_attributes', array($this, 'navigation_link_next_class') );
 		add_filter( 'wp_nav_menu_items', array( $this, 'remove_itemscope_nav_el' ) );
+
+		if ( ! $this->theme->Setup->wp5 ) {
+			add_filter( 'get_image_tag', array($this, 'get_image_tag'), 10, 4 );
+			add_filter( 'image_send_to_editor', array($this, 'image_send_to_editor'), 10, 3 );
+		}
 
 		if ( $this->theme->Options->get_value( 'unexpone_ID', false ) ) {
 			add_filter( 'body_class', array($this, 'unexpone_id_body_class') );
@@ -1308,8 +1311,6 @@ class Template {
 	 * Sets the current page layer runtime loop, 
 	 * placed at the beginning of the page layer loop
 	 *
-	 * //TODO review
-	 *
 	 * @see ./theme/template-parts/page.php
 	 */
 	public function page_layer_loop_start() {
@@ -1341,8 +1342,6 @@ class Template {
 	 * Resets the current page layer runtime loop, 
 	 * placed at the end of the page layer loop
 	 *
-	 * //TODO review
-	 *
 	 * @see ./theme/template-parts/page.php
 	 */
 	public function page_layer_loop_end() {
@@ -1356,8 +1355,6 @@ class Template {
 	/**
 	 * Sets the current page block runtime loop, 
 	 * placed at the beginning of the page block loop
-	 *
-	 * //TODO review
 	 *
 	 * @see ./theme/template-parts/page.php
 	 */
@@ -1383,8 +1380,6 @@ class Template {
 	/**
 	 * Resets the current page block runtime loop, 
 	 * placed at the end of the page block loop
-	 *
-	 * //TODO review
 	 *
 	 * @see ./theme/template-parts/page.php
 	 */
@@ -1653,7 +1648,7 @@ class Template {
 				'/\s+height="\d+"/i'
 			),
 			array(
-				' class="$1 img-fluid"',
+				' class="$1"',
 				'',
 				''
 			),
@@ -1673,7 +1668,7 @@ class Template {
 	 * @return string $html
 	 */
 	public function image_send_to_editor( $html, $id, $caption ) {
-		$html = '<figure class="figure">' . $html;
+		$html = '<figure>' . $html;
 
 		if ( $caption )
 			$html .= '<figcaption>' . $caption . '</figcaption>';
