@@ -193,7 +193,7 @@ class Setup {
 	 */
 	public function styles_queue() {
 
-		// Bootstrap 4
+		// bootstrap-4
 		wp_register_style(
 			'bootstrap-4',
 			get_theme_file_uri( ASSETS_BASE_PATH . '/css/lib/bootstrap/bootstrap' . $this->asset_prefix . '.css' ),
@@ -201,7 +201,7 @@ class Setup {
 			'4.3.1'
 		);
 
-		// Owl Carousel 2
+		// owl-carousel-2
 		wp_register_style(
 			'owl-carousel-2',
 			get_theme_file_uri( ASSETS_BASE_PATH . '/css/lib/owl.carousel/owl.carousel' . $this->asset_prefix . '.css' ),
@@ -217,7 +217,7 @@ class Setup {
 	 */
 	public function scripts_queue() {
 
-		// Register script: Bootstrap 4
+		// Register script: bootstrap-4
 		wp_register_script(
 			'bootstrap-4',
 			get_theme_file_uri( ASSETS_BASE_PATH . '/js/lib/bootstrap/bootstrap.bundle' . $this->asset_prefix . '.js' ),
@@ -226,7 +226,7 @@ class Setup {
 			true
 		);
 
-		// Register script: Owl Carousel 2
+		// Register script: owl-carousel-2
 		wp_register_script(
 			'owl-carousel-2',
 			get_theme_file_uri( ASSETS_BASE_PATH . '/js/lib/owl.carousel/owl.carousel' . $this->asset_prefix . '.js' ),
@@ -235,7 +235,7 @@ class Setup {
 			true
 		);
 
-		// Deregister script: jQuery
+		// Deregister script: jquery
 		wp_deregister_script( 'jquery' );
 		wp_register_script( 'jquery', false, array('jquery-core'), null );
 
@@ -253,7 +253,7 @@ class Setup {
 				null
 			);
 		} else {
-			wp_add_inline_script( 'jquery-core', 'window.$ = jQuery;' );
+			wp_add_inline_script( 'jquery-core', 'var jQuery = $;' );
 		}
 
 	}

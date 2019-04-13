@@ -9,6 +9,12 @@
 namespace theme;
 
 
+/**
+ * theme_show_post_thumbnail filter.
+ *
+ * @param bool void
+ * @param string void
+ */
 $show_post_thumbnail = apply_filters( 'theme_show_post_thumbnail', false, 'search-entry' );
 $post_format = get_post_format();
 $post_format_data = get_post_format_data( $post_format );
@@ -20,6 +26,8 @@ $post_format_data = get_post_format_data( $post_format );
 <?php
 /**
  * theme_entry_post_header hook.
+ *
+ * @param string void
  */
 do_action( 'theme_entry_post_header', 'search-entry' );
 ?>
@@ -54,6 +62,8 @@ edit_post_link();
 <?php
 /**
  * theme_entry_post_footer hook.
+ *
+ * @param string void
  */
 do_action( 'theme_entry_post_footer', 'search-entry' );
 ?>
