@@ -30,6 +30,24 @@ class Template {
 
 		$this->theme = Theme::instance();
 
+		if ( ! $this->theme->Setup->wp5 ) {
+			add_filter( 'get_image_tag', array($this, 'get_image_tag'), 10, 4 );
+			add_filter( 'image_send_to_editor', array($this, 'image_send_to_editor'), 10, 3 );
+		}
+
+		! is_admin() && $this->template_frontend();
+
+		Theme::register( "Template", $this );
+
+	}
+
+
+
+	/**
+	 * Front-end template related
+	 */
+	public function template_frontend() {
+
 		add_action( 'wp', array($this, 'page_mode_filters') );
 
 		add_action( 'theme_send_form_helper', array($this, 'send_form_actions') );
@@ -111,11 +129,6 @@ class Template {
 		add_filter( 'next_posts_link_attributes', array($this, 'navigation_link_next_class') );
 		add_filter( 'wp_nav_menu_items', array( $this, 'remove_itemscope_nav_el' ) );
 
-		if ( ! $this->theme->Setup->wp5 ) {
-			add_filter( 'get_image_tag', array($this, 'get_image_tag'), 10, 4 );
-			add_filter( 'image_send_to_editor', array($this, 'image_send_to_editor'), 10, 3 );
-		}
-
 		if ( $this->theme->Options->get_value( 'unexpone_ID', false ) ) {
 			add_filter( 'body_class', array($this, 'unexpone_id_body_class') );
 			add_filter( 'post_class', array($this, 'unexpone_id_post_class'), 9999, 2 );
@@ -125,10 +138,7 @@ class Template {
 			add_filter( 'theme_data_id_default', array($this, 'unexpone_id_data_id_default') );
 		}
 
-		Theme::register( "Template", $this );
-
 	}
-
 
 
 	/**

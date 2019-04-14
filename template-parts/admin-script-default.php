@@ -2,7 +2,7 @@
 /**
  * Default inline backend script template part
  *
- * //TODO test
+ * //TODO FIX
  *
  * @package theme
  * @version 1.0
@@ -175,7 +175,8 @@ namespace theme;
     if ('hooks' in wp && wp.hooks.hasFilter('editor.BlockEdit')) {
       window.theme_columns_inheriterance = { initialized: false, grid: 12, last: -1, count: 0 };
 
-      /*wp.hooks.addFilter('editor.BlockEdit', 'theme/init-columns-classname', initColumnsClassname);
+      /* //TODO FIX
+      wp.hooks.addFilter('editor.BlockEdit', 'theme/init-columns-classname', initColumnsClassname);
       wp.hooks.addFilter('blocks.getSaveContent.extraProps', 'theme/add-columns-classname', addColumnsClassname);
       wp.hooks.addFilter('blocks.getSaveContent.extraProps', 'theme/add-column-classname', addColumnClassname);*/
     }

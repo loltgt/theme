@@ -36,6 +36,18 @@ class Shop_WC {
 		add_action( 'after_setup_theme', array($this, 'wc_theme_supports') );
 		add_action( 'wp_enqueue_scripts', array($this, 'wc_theme_assets_queue') );
 
+		! is_admin() && $this->wc_template_frontend();
+
+		Theme::register( "Shop_WC", $this, "shop" );
+
+	}
+
+
+	/**
+	 * Front-end shop related
+	 */
+	public function wc_template_frontend() {
+
 		// Template: ./theme/woocommerce/archive-product.php
 		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 		add_action( 'woocommerce_shop_loop', array($this, 'wc_shop_loop_ajax_add_to_cart'), 0 );
@@ -111,10 +123,7 @@ class Shop_WC {
 		add_filter( 'woocommerce_breadcrumb_defaults', array($this, 'wc_breadcrumb_defaults') );
 		add_filter( 'woocommerce_breadcrumb_home_url', array($this, 'wc_breadcrumb_home_url') );
 
-		Theme::register( "Shop_WC", $this, "shop" );
-
 	}
-
 
 
 	/**

@@ -40,6 +40,19 @@ class Functions {
 		add_filter( 'theme_mod_custom_logo', array($this, 'custom_brand_name_theme_mod_wrapper') );
 		add_filter( 'email', array($this, 'email_filter'), 10, 5 );
 
+		! is_admin() && $this->functions_frontend();
+
+		Theme::register( "Functions", $this );
+		
+	}
+
+
+
+	/**
+	 * Front-end functions related
+	 */
+	public function functions_frontend() {
+
 		//TODO form field after and before
 		//TODO form input field, number default value
 		//TODO form input field, numeric range
@@ -49,10 +62,7 @@ class Functions {
 		add_filter( 'theme_send_form_body', array($this, 'send_form_multipart_body'), 100 );
 		add_filter( 'theme_send_form_default_msgs', array($this, 'send_form_default_msgs') );
 
-		Theme::register( "Functions", $this );
-		
 	}
-
 
 	/**
 	 * Sets page mode for layout
