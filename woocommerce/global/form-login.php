@@ -11,9 +11,8 @@
  * the readme will list any important changes.
  *
  * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.3.0
+ * @version     3.6.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -30,11 +29,11 @@ if ( is_user_logged_in() ) {
 
 	<p class="form-group small">
 		<label for="username" class="sr-only"><?php esc_html_e( 'Username or email', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input class="form-control form-control-sm input-text" type="text" name="username" id="username" placeholder="<?php esc_attr_e( 'Username or email', 'woocommerce' ); ?>" required />
+		<input class="form-control form-control-sm input-text" type="text" name="username" id="username" placeholder="<?php esc_attr_e( 'Username or email', 'woocommerce' ); ?>" autocomplete="username" required />
 	</p>
 	<p class="form-group small">
 		<label for="password" class="sr-only"><?php esc_html_e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input class="form-control form-control-sm input-text" type="password" name="password" id="password" placeholder="<?php esc_attr_e( 'Password', 'woocommerce' ); ?>" required />
+		<input class="form-control form-control-sm input-text" type="password" name="password" id="password" placeholder="<?php esc_attr_e( 'Password', 'woocommerce' ); ?>" autocomplete="current-password" required />
 	</p>
 
 	<?php do_action( 'woocommerce_login_form' ); ?>

@@ -1,6 +1,13 @@
 #CHANGELOG
 
 
+## [1.0-alpha-105]
+
+- changes targeting WordPress 5.2
+- changes targeting WooCommerce 3.6.3
+- update composer deps
+
+
 ## [1.0-alpha-104]
 
 - minor fixes
