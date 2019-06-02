@@ -11,7 +11,11 @@ namespace theme;
 
 get_header();
 ?>
-<?php get_template_part( 'template-parts/hero' ); ?>
+<?php
+if ( has_page_hero() ) :
+	get_template_part( 'template-parts/hero' );
+endif;
+?>
 <main id="content" class="site-content" role="main">
 <?php
 if ( is_active_sidebar( 'page-top' ) ) :

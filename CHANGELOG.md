@@ -1,6 +1,11 @@
 #CHANGELOG
 
 
+## [1.0-alpha-106]
+
+- minor fixes
+
+
 ## [1.0-alpha-105]
 
 - changes targeting WordPress 5.2
