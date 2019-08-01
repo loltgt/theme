@@ -1,6 +1,11 @@
 #CHANGELOG
 
 
+## [1.0-alpha-107]
+
+- fix in class `\theme\Layer_Factory` function `get_field`, `have_rows`
+
+
 ## [1.0-alpha-106]
 
 - minor fixes

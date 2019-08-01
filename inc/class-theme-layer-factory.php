@@ -46,7 +46,7 @@ abstract class Layer_Factory {
 		global $post;
 
 		if ( ! $post_id )
-			$post_id = $post->ID ? get_post_ID() : 0;
+			$post_id = $post->ID ? get_the_ID() : 0;
 
 		$field = ( $post_id === true );
 		$post_id = $field ? 0 : $post_id;
@@ -170,7 +170,7 @@ abstract class Layer_Factory {
 		global $post;
 
 		if ( ! $post_id )
-			$post_id = $post->ID ? get_post_ID() : 0;
+			$post_id = $post->ID ? get_the_ID() : 0;
 
 		if ( Theme::isset( "rows:{$key}:{$post_id}" ) ) {
 			$count = Theme::get( "count:rows:{$key}:{$post_id}", 0 );
