@@ -5,7 +5,7 @@
  * My custom theme.
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  * @license GNU General Public License v2 or later
  * @copyright Copyright (c) 2019 Leonardo Laureti
  */
@@ -28,6 +28,7 @@ define( 'INCLUDES_BASE_PATH', '/inc' );
 define( 'LIBRARY_BASE_PATH', '/lib' );
 define( 'LANGUAGE_BASE_PATH', '/lang' );
 define( 'ASSETS_BASE_PATH', '/assets' );
+
 
 
 /* Verify requirements */
@@ -263,22 +264,12 @@ new Theme;
 
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-options.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-functions.php';
-require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-layer.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-setup.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-admin.php';
-require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-customizer.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-template.php';
-require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/class-theme-shop-wc.php';
 
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/template-functions.php';
 require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/template-tags.php';
-
-
-
-/* Load 3th party libraries */
-
-require_once TEMPLATE_DIRECTORY . LIBRARY_BASE_PATH . '/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php';
-require_once TEMPLATE_DIRECTORY . LIBRARY_BASE_PATH . '/wp-bootstrap-comment-walker/class-wp-bootstrap-comment-walker.php';
 
 
 //add_action( 'wp_footer', array(Theme::instance(), 'debug'), 9999 );

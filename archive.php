@@ -3,7 +3,7 @@
  * Template Name: Archive
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
@@ -13,18 +13,13 @@ __( 'Archive', 'theme' );
 
 get_header();
 ?>
-<?php
-if ( has_page_hero() ) :
-	get_template_part( 'template-parts/hero' );
-endif;
-?>
-<main id="content" class="site-content" role="main">
+<main id="content" class="site-content">
 <?php
 if ( is_active_sidebar( 'page-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-top' );
 endif;
 ?>
-<section class="archive container">
+<section class="archive posts container">
 <?php if ( have_posts() && ! is_home() ) : ?>
 <header class="page-header">
 <?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>

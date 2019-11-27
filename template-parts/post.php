@@ -6,12 +6,10 @@
  * @global null|object $post - \WP_Post
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
-
-use \theme\Layer;
 
 
 if ( post_password_required() ) {
@@ -23,7 +21,7 @@ if ( post_password_required() ) {
 global $post;
 ?>
 
-<article id="post-<?php the_data_ID(); ?>" <?php post_class( 'container' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'container' ); ?>>
 <?php
 /**
  * theme_post_start hook.
@@ -31,6 +29,15 @@ global $post;
  * @param int $post->ID - \WP_Post
  */
 do_action( 'theme_post_start', $post->ID );
+?>
+<?php
+/**
+ * theme_post_header filter.
+ *
+ * @param bool void - true
+ * @param int $post->ID - \WP_Post
+ */
+if ( apply_filters( 'theme_post_header', true, $post->ID ) ) :
 ?>
 <header class="post-header">
 <?php
@@ -65,6 +72,7 @@ endif;
 do_action( 'theme_post_header_end', $post->ID );
 ?>
 </header>
+<?php endif; ?>
 <div class="post-content">
 <?php
 /**
@@ -89,7 +97,15 @@ the_content( sprintf(
 do_action( 'theme_post_content_end', $post->ID );
 ?>
 </div>
-<?php if ( is_single() ) : ?>
+<?php
+/**
+ * theme_post_footer filter.
+ *
+ * @param bool void - true
+ * @param int $post->ID - \WP_Post
+ */
+if ( apply_filters( 'theme_post_footer', true, $post->ID ) ) :
+?>
 <footer class="post-footer">
 <?php
 /**
@@ -101,10 +117,6 @@ do_action( 'theme_post_footer_start', $post->ID );
 ?>
 <?php
 the_post_footer();
-
-if ( Layer::get_field( 'enable_footer_notes' ) ) :
-	echo apply_filters( 'the_content', get_field( 'footer_notes' ) );
-endif;
 
 wp_link_pages();
 ?>

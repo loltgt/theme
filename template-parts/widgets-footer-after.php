@@ -3,7 +3,7 @@
  * Widgets (after footer) template part
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
@@ -12,7 +12,7 @@ namespace theme;
 if ( ! is_active_sidebar( 'footer-after' ) )
 	return;
 ?>
-<aside id="widgets-after-footer" class="widget-area" role="complementary" aria-label="<?php echo esc_attr_x( 'Footer', 'footer-after', 'theme' ); ?>">
+<aside id="widgets-after-footer" class="widget-area" aria-label="<?php echo esc_attr_x( 'Footer', 'footer-after', 'theme' ); ?>">
 <div class="widget-column widgets-after-footer">
 <?php dynamic_sidebar( 'footer-after' ); ?>
 </div>

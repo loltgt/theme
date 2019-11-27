@@ -5,7 +5,7 @@
  * //TODO reflow label, input[type=checkbox|radio]
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
@@ -175,19 +175,6 @@ class Options {
 		);
 
 
-		add_settings_field(
-			'brand_name',
-			__( 'Brand Name', 'theme' ),
-			array($this, 'text_field_render'),
-			$this->options_page,
-			'theme_settings_section',
-			array(
-				'name' => $this->get_name('brand_name'),
-				'value' => $this->get_value('brand_name')
-			)
-		);
-
-
 		/**
 		 * theme_settings_begin hook.
 		 *
@@ -203,26 +190,6 @@ class Options {
 			__( 'Frontend', 'theme' ),
 			array($this, 'settings_frontend_section'),
 			$this->options_page
-		);
-
-
-		add_settings_field(
-			'entry_gallery_slider',
-			__( 'Archive gallery entry post format default to slider', 'theme' ),
-			array($this, 'checkbox_field_render'),
-			$this->options_page,
-			'theme_settings_frontend_section',
-			array(
-				'name' => $this->get_name('entry_gallery_slider'),
-				'value' => $this->get_value('entry_gallery_slider'),
-				'default' => true
-			)
-		);
-
-		$this->add_settings_field_sanitize(
-			'entry_gallery_slider',
-			'bool',
-			true
 		);
 
 
@@ -264,46 +231,6 @@ class Options {
 		);
 
 
-		add_settings_field(
-			'enhance_ui',
-			__( 'Enhances UI', 'theme' ),
-			array($this, 'checkbox_field_render'),
-			$this->options_page,
-			'theme_settings_backend_section',
-			array(
-				'name' => $this->get_name('enhance_ui'),
-				'value' => $this->get_value('enhance_ui'),
-				'default' => true
-			)
-		);
-
-		$this->add_settings_field_sanitize(
-			'enhance_ui',
-			'bool',
-			true
-		);
-
-
-		add_settings_field(
-			'enhances_font',
-			__( 'Enhances font readability', 'theme' ),
-			array($this, 'checkbox_field_render'),
-			$this->options_page,
-			'theme_settings_backend_section',
-			array(
-				'name' => $this->get_name('enhance_font'),
-				'value' => $this->get_value('enhance_font'),
-				'default' => true
-			)
-		);
-
-		$this->add_settings_field_sanitize(
-			'enhance_font',
-			'bool',
-			true
-		);
-
-
 		/**
 		 * theme_settings_backend_section hook.
 		 *
@@ -319,26 +246,6 @@ class Options {
 			__( 'Advanced', 'theme' ),
 			array($this, 'settings_advanced_section'),
 			$this->options_page
-		);
-
-
-		add_settings_field(
-			'unexpone_ID',
-			__( 'Unexposes post ID', 'theme' ),
-			array($this, 'checkbox_field_render'),
-			$this->options_page,
-			'theme_settings_advanced_section',
-			array(
-				'name' => $this->get_name('unexpone_ID'),
-				'value' => $this->get_value('unexpone_ID'),
-				'default' => true
-			)
-		);
-
-		$this->add_settings_field_sanitize(
-			'unexpone_ID',
-			'bool',
-			true
 		);
 
 
@@ -558,7 +465,7 @@ class Options {
 	/**
 	 * Sanitizes fields and mutates/transforms variable types
 	 *
-	 * //TODO review $callback
+	 * //TODO check $callback
 	 *
 	 * @param string $slug
 	 * @param string $type

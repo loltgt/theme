@@ -1,14 +1,17 @@
 <?php
 /**
- * Header template (default)
+ * Header template
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
 
 
+$has_nav_menu = has_nav_menu( 'header' );
+$has_widgets_before_menu = is_active_sidebar( 'navigation-primary-before' );
+$has_widgets_after_menu = is_active_sidebar( 'navigation-primary-after' );
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
@@ -18,25 +21,25 @@ namespace theme;
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-<header id="header" class="site-header" role="banner">
+<?php if ( $has_nav_menu || $has_widgets_before_menu || $has_widgets_after_menu ) : ?>
+
+<header id="header" class="site-header">
 <?php
-if ( is_active_sidebar( 'navigation-primary-before' ) ) :
+if ( $has_widgets_before_menu ) :
 	get_template_part( 'template-parts/widgets', 'navigation-primary-before' );
 endif;
 ?>
-<?php get_template_part( 'template-parts/navigation', 'primary' ); ?>
 <?php
-if ( is_active_sidebar( 'navigation-primary-after' ) ) :
+if ( $has_nav_menu ) :
+	get_template_part( 'template-parts/navigation', 'primary' );
+endif;
+?>
+<?php
+if ( $has_widgets_after_menu ) :
 	get_template_part( 'template-parts/widgets', 'navigation-primary-after' );
 endif;
 ?>
 </header>
+<?php endif; ?>
 
 <div id="container" class="site-container">
-<?php
-/**
- * theme_print_notices hook.
- *
- * @hooked \theme\Functions->print_notices - 10
- */
-do_action( 'theme_print_notices' );

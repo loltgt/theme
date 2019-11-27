@@ -3,13 +3,12 @@
  * theme template tags
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
  
  namespace theme;
 
  use \theme\Theme;
- use \theme\Layer;
 
 
 /**
@@ -486,7 +485,7 @@ if ( ! function_exists( '\theme\get_post_time_link' ) ) {
 
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) :
 			$time = "<time class=\"{$class}\" datetime=\"%1\$s\">%2\$s</time>\n";
-			$time .= "<time class=\"updated\" datetime=\"%3\$s\" aria-hidden=\"true\" hidden>%4\$s</time>";
+			$time .= "<time class=\"updated\" datetime=\"%3\$s\" hidden>%4\$s</time>";
 		endif;
 
 		$time = sprintf( $time,
@@ -862,138 +861,5 @@ if ( ! function_exists( '\theme\get_the_entry_post_format' ) ) {
 if ( ! function_exists( '\theme\the_entry_post_format' ) ) {
 	function the_entry_post_format( $post_format, $post_format_data = '' ) {
 		echo \theme\get_the_entry_post_format( $post_format, $post_format_data = '' );
-	}
-}
-
-
-/**
- * Builds the modal close button
- *
- * @param string $label
- * @return string $r
- */
-if ( ! function_exists( '\theme\get_the_modal_close_button' ) ) {
-	function get_the_modal_close_button( $label = '' ) {
-		/**
-		 * Filters all theme links related arguments
-		 *
-		 * @param array $args
-		 * @param string $context
-		 */
-		$args = apply_filters( 'theme_links_defaults', array(
-			'close_button_icon' => '&times;',
-			'close_button_label' => __( 'Close' ),
-		), 'close-button' );
-
-		if ( ! $label )
-			$label = $args['close_button_label'];
-
-		$icon = $args['close_button_icon'];
-
-		$r = "<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"{$label}\" title=\"{$label}\">\n";
-		$r .= "\t<span aria-hidden=\"true\">{$icon}</span>\n</button>\n";
-
-		return $r;
-	}
-}
-
-
-/**
- * Displays the modal close button
- *
- * @param string $label
- */
-if ( ! function_exists( '\theme\the_modal_close_button' ) ) {
-	function the_modal_close_button( $label = '' ) {
-		echo \theme\get_the_modal_close_button( $label );
-	}
-}
-
-
-/**
- * Builds the paginated navigation to adjacent wizard pages matching the css framework behaviourk
- *
- * @param array $args
- * @return string $navigation
- */
-if ( ! function_exists( '\theme\get_the_wizard_pagination' ) ) {
-	function get_the_wizard_pagination( $args = array() ) {
-		$navigation = '';
-
-		if ( $args['total'] < 2 )
-			return $navigation;
-
-		global $post;
-
-		$defaults = array(
-			'screen_reader_text' => __( 'Navigation' ),
-			'format' => '?page=%#%'
-		);
-
-		if ( get_option( 'permalink_structure' ) && ! in_array( $post->post_status, array('draft', 'pending') ) )
-			$defaults['base'] = trailingslashit( get_permalink() . '%#%' );
-
-		/**
-		 * Filters all theme links related arguments
-		 *
-		 * @param array $args
-		 * @param string $context
-		 */
-		$args = wp_parse_args( $args, apply_filters( 'theme_links_defaults', $defaults, 'modal-pagination' ) );
-
-		$links = \theme\paginate_links( $args );
-
-		if ( $links )
-			$navigation = _navigation_markup( $links, 'wizard-pagination', $args['screen_reader_text'] );
-
-		return $navigation;
-	}
-}
-
-
-/**
- * Displays the paginated navigation to adjacent modal pages matching the css framework behaviour
- *
- * @param array $args
- */
-if ( ! function_exists( '\theme\the_wizard_pagination' ) ) {
-	function the_wizard_pagination( $args = array() ) {
-		echo \theme\get_the_wizard_pagination( $args );
-	}
-}
-
-
-/**
- * Builds the form field validation
- *
- * @return void|string
- */
-if ( ! function_exists( '\theme\get_the_form_field_validation' ) ) {
-	function get_the_form_field_validation() {
-		if ( ! Theme::isset( "form-validation" ) && ! Layer::get_field( 'validate' ) )
-			return;
-
- 		/**
-		 * Filter with default form messages
-		 *
-		 * @param array void
-		 */
-		$defaults = apply_filters( 'theme_send_form_default_msgs', array() );
-
-		$emsg = Layer::get_subfield( 'emsg', $defaults['error'] );
-
-		$msg = sprintf( $emsg, Layer::get_subfield( 'label' ) );
-
-		return "\t\t<div class=\"invalid-feedback\">{$msg}</div>\n";
-	}
-}
-
-
-/**
- * Displays the form field validation
- */
-if ( ! function_exists( '\theme\the_form_field_validation' ) ) {
-	function the_form_field_validation() {
-		echo \theme\get_the_form_field_validation();
 	}
 }

@@ -3,7 +3,7 @@
  * Template Name: Page (sidebar)
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
@@ -11,16 +11,11 @@ namespace theme;
 
 __( 'Page (sidebar)', 'theme' );
 
-$page_dispose = get_theme_mod( 'page_dispose', 'ltr' );
+$is_rtl = is_rtl();
 
 get_header();
 ?>
-<?php
-if ( has_page_hero() ) :
-	get_template_part( 'template-parts/hero' );
-endif;
-?>
-<main id="content" class="site-content" role="main">
+<main id="content" class="site-content">
 <?php
 if ( is_active_sidebar( 'page-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-top' );
@@ -29,7 +24,7 @@ endif;
 <div class="container">
 <div class="row">
 <?php
-if ( $page_dispose === 'rtl' ) :
+if ( $is_rtl ) :
 	get_sidebar();
 endif;
 ?>
@@ -47,7 +42,7 @@ endwhile;
 ?>
 </div>
 <?php
-if ( $page_dispose === 'ltr' ) :
+if ( ! $is_rtl ) :
 	get_sidebar();
 endif;
 ?>

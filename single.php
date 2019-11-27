@@ -3,7 +3,7 @@
  * Single post template
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
@@ -11,7 +11,7 @@ namespace theme;
 
 get_header();
 ?>
-<main id="content" class="site-content" role="main">
+<main id="content" class="site-content">
 <?php
 if ( is_active_sidebar( 'post-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'post-top' );

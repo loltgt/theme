@@ -3,7 +3,7 @@
  * Author template part
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;

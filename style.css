@@ -4,7 +4,7 @@ Theme URI: https://github.com/loltgt/theme
 Author: Leonardo Laureti
 Author URI: https://github.com/loltgt/
 Description: My custom theme.
-Version: 1.0
+Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme
@@ -20,23 +20,15 @@ Text Domain: theme
 .post-navigation { position: absolute; top: 0.5rem; right: 0; }
 .post-navigation a, .post-navigation .disabled { text-decoration: none; }
 .post-footer { margin-top: 3rem; }
-.woocommerce-products-header, .woocommerce-products-header .alert { margin-bottom: 1rem; }
-.woocommerce-products-header .alert { width: 100%; }
-.woocommerce-mini-cart { margin: 0; padding-left: 0; list-style: none; }
 .card-click-target { position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 1; }
 .entry.card .card-body a, .entry.card .entry-object { position: relative; z-index: 2; }
 .list-entry.card, .search-entry.card { margin-bottom: 1rem; }
 .entry.card .card-body .edit-link { float: right; }
-.product-entry.card .onsale { position: absolute; padding: 0.4rem 0.6rem; z-index: 0; }
-.product-entry.card .card-body { position: relative; }
-.product-entry.card .card-body .edit-link { position: absolute; top: -3rem; right: 1rem; }
-.entry .embed-responsive.spotify:before { padding-top: 22.5%; }
 
 @media (min-width: 992px) {
   #container { min-height: 60vmin; }
   .post-navigation a, .post-navigation .disabled { font-size: 2rem; }
   .post-tags .post-tags-label { float: left; padding: 0.4rem 0; }
-  .card.product-entry .button { float: right; }
 }
 @media (min-width: 1200px) {
   #container { min-height: 70vmin; }

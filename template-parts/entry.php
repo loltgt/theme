@@ -3,7 +3,7 @@
  * Entry post template part
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
@@ -12,8 +12,8 @@ namespace theme;
 /**
  * theme_show_post_thumbnail filter.
  *
- * @param bool void
- * @param string void
+ * @param bool void - true
+ * @param string void - ‘context‘
  */
 $show_post_thumbnail = apply_filters( 'theme_show_post_thumbnail', true, 'entry' );
 

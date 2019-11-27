@@ -1,9 +1,9 @@
 <?php
 /**
- * Footer template (default)
+ * Footer template
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
@@ -16,20 +16,20 @@ $has_widgets_after_menu = is_active_sidebar( 'footer-after' );
 </div>
 <?php if ( $has_nav_menu || $has_widgets_before_menu || $has_widgets_after_menu ) : ?>
 
-<footer id="footer" class="site-footer" role="contentinfo">
+<footer id="footer" class="site-footer">
 <div class="container">
 <?php
-if ( is_active_sidebar( 'footer-before' ) ) :
+if ( $has_widgets_before_menu ) :
 	get_template_part( 'template-parts/widgets', 'footer-before' );
 endif;
 ?>
 <?php
-if ( has_nav_menu( 'footer' ) ) :
+if ( $has_nav_menu ) :
 	get_template_part( 'template-parts/navigation', 'footer' );
 endif;
 ?>
 <?php
-if ( is_active_sidebar( 'footer-after' ) ) :
+if ( $has_widgets_after_menu ) :
 	get_template_part( 'template-parts/widgets', 'footer-after' );
 endif;
 ?>

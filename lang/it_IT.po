@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: theme 0.1\n"
-"POT-Creation-Date: \n"
+"Project-Id-Version: theme 2.0\n"
+"POT-Creation-Date: 2019-11-27 07:57+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,611 +15,27 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: assets\n"
 "X-Poedit-SearchPathExcluded-1: lib\n"
 "X-Poedit-SearchPathExcluded-2: src\n"
 
-#: 404.php:24
+#: 404.php:22
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Ops! La pagina non è stata trovata."
 
-#: 404.php:27
+#: 404.php:25
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 "Sembra che la pagina che stai cercando non sia disponibile. Vuoi fare una "
 "ricerca?"
 
-#: acfpro-local-field-groups.php:22
-msgctxt "field-title"
-msgid "Form"
-msgstr ""
-
-#: acfpro-local-field-groups.php:26 acfpro-local-field-groups.php:2625
-msgctxt "field-label"
-msgid "Use third parts plug-ins"
-msgstr ""
-
-#: acfpro-local-field-groups.php:45 acfpro-local-field-groups.php:2363
-#: acfpro-local-field-groups.php:2396 acfpro-local-field-groups.php:2644
-msgctxt "field-label"
-msgid "Shortcode"
-msgstr ""
-
-#: acfpro-local-field-groups.php:72 acfpro-local-field-groups.php:2093
-#: acfpro-local-field-groups.php:2126 acfpro-local-field-groups.php:3846
-msgctxt "field-label"
-msgid "Form"
-msgstr ""
-
-#: acfpro-local-field-groups.php:99
-msgctxt "field-label"
-msgid "Legend"
-msgstr ""
-
-#: acfpro-local-field-groups.php:118
-msgctxt "field-label"
-msgid "Field"
-msgstr ""
-
-#: acfpro-local-field-groups.php:133
-msgctxt "field-label"
-msgid "Input"
-msgstr ""
-
-#: acfpro-local-field-groups.php:138 acfpro-local-field-groups.php:525
-#: acfpro-local-field-groups.php:829 acfpro-local-field-groups.php:1192
-#: acfpro-local-field-groups.php:1928 acfpro-local-field-groups.php:2012
-#: acfpro-local-field-groups.php:2098 acfpro-local-field-groups.php:2184
-#: acfpro-local-field-groups.php:2276 acfpro-local-field-groups.php:2368
-msgctxt "field-label"
-msgid "Column"
-msgstr ""
-
-#: acfpro-local-field-groups.php:166 acfpro-local-field-groups.php:1220
-#: acfpro-local-field-groups.php:2714 acfpro-local-field-groups.php:3044
-#: acfpro-local-field-groups.php:3543
-msgctxt "field-label"
-msgid "Type"
-msgstr ""
-
-#: acfpro-local-field-groups.php:178
-msgctxt "field-choices"
-msgid "Color selector"
-msgstr ""
-
-#: acfpro-local-field-groups.php:179
-msgctxt "field-choices"
-msgid "Date/hours selector"
-msgstr ""
-
-#: acfpro-local-field-groups.php:180
-msgctxt "field-choices"
-msgid "Datetime selector"
-msgstr ""
-
-#: acfpro-local-field-groups.php:181
-msgctxt "field-choices"
-msgid "Email"
-msgstr ""
-
-#: acfpro-local-field-groups.php:182
-msgctxt "field-choices"
-msgid "Month selector"
-msgstr ""
-
-#: acfpro-local-field-groups.php:183
-msgctxt "field-choices"
-msgid "Number"
-msgstr ""
-
-#: acfpro-local-field-groups.php:184
-msgctxt "field-choices"
-msgid "Password"
-msgstr ""
-
-#: acfpro-local-field-groups.php:185
-msgctxt "field-choices"
-msgid "Numeric range"
-msgstr ""
-
-#: acfpro-local-field-groups.php:186
-msgctxt "field-choices"
-msgid "Search"
-msgstr ""
-
-#: acfpro-local-field-groups.php:187
-msgctxt "field-choices"
-msgid "Telephone"
-msgstr ""
-
-#: acfpro-local-field-groups.php:188
-msgctxt "field-choices"
-msgid "Text"
-msgstr ""
-
-#: acfpro-local-field-groups.php:189
-msgctxt "field-choices"
-msgid "Time selector"
-msgstr ""
-
-#: acfpro-local-field-groups.php:190
-msgctxt "field-choices"
-msgid "URL"
-msgstr ""
-
-#: acfpro-local-field-groups.php:191
-msgctxt "field-choices"
-msgid "Weeks selector"
-msgstr ""
-
-#: acfpro-local-field-groups.php:205 acfpro-local-field-groups.php:553
-#: acfpro-local-field-groups.php:857 acfpro-local-field-groups.php:1247
-#: acfpro-local-field-groups.php:3122 acfpro-local-field-groups.php:3621
-msgctxt "field-label"
-msgid "Label"
-msgstr ""
-
-#: acfpro-local-field-groups.php:224 acfpro-local-field-groups.php:572
-msgctxt "field-label"
-msgid "Default value"
-msgstr ""
-
-#: acfpro-local-field-groups.php:243 acfpro-local-field-groups.php:591
-#: acfpro-local-field-groups.php:954 acfpro-local-field-groups.php:1266
-msgctxt "field-label"
-msgid "Required field"
-msgstr ""
-
-#: acfpro-local-field-groups.php:262 acfpro-local-field-groups.php:610
-#: acfpro-local-field-groups.php:973 acfpro-local-field-groups.php:1285
-msgctxt "field-label"
-msgid "Enable validation"
-msgstr ""
-
-#: acfpro-local-field-groups.php:289 acfpro-local-field-groups.php:637
-#: acfpro-local-field-groups.php:1000 acfpro-local-field-groups.php:1312
-msgctxt "field-label"
-msgid "Enable placeholder"
-msgstr ""
-
-#: acfpro-local-field-groups.php:316 acfpro-local-field-groups.php:664
-#: acfpro-local-field-groups.php:1027 acfpro-local-field-groups.php:1331
-msgctxt "field-label"
-msgid "Validation message"
-msgstr ""
-
-#: acfpro-local-field-groups.php:350
-msgctxt "field-label"
-msgid "Validation pattern"
-msgstr ""
-
-#: acfpro-local-field-groups.php:394 acfpro-local-field-groups.php:698
-#: acfpro-local-field-groups.php:1061 acfpro-local-field-groups.php:1365
-#: acfpro-local-field-groups.php:1575 acfpro-local-field-groups.php:1804
-msgctxt "field-label"
-msgid "Additional attributes"
-msgstr ""
-
-#: acfpro-local-field-groups.php:421 acfpro-local-field-groups.php:725
-#: acfpro-local-field-groups.php:895 acfpro-local-field-groups.php:1088
-#: acfpro-local-field-groups.php:1392 acfpro-local-field-groups.php:1602
-#: acfpro-local-field-groups.php:1831
-msgctxt "field-label"
-msgid "Name"
-msgstr ""
-
-#: acfpro-local-field-groups.php:440 acfpro-local-field-groups.php:744
-#: acfpro-local-field-groups.php:914 acfpro-local-field-groups.php:1107
-#: acfpro-local-field-groups.php:1411 acfpro-local-field-groups.php:1621
-#: acfpro-local-field-groups.php:1850
-msgctxt "field-label"
-msgid "Value"
-msgstr ""
-
-#: acfpro-local-field-groups.php:461 acfpro-local-field-groups.php:765
-#: acfpro-local-field-groups.php:1128 acfpro-local-field-groups.php:1432
-msgctxt "field-label"
-msgid "Content before field"
-msgstr ""
-
-#: acfpro-local-field-groups.php:488 acfpro-local-field-groups.php:792
-#: acfpro-local-field-groups.php:1155 acfpro-local-field-groups.php:1459
-msgctxt "field-label"
-msgid "Content after field"
-msgstr ""
-
-#: acfpro-local-field-groups.php:520
-msgctxt "field-label"
-msgid "Textarea"
-msgstr ""
-
-#: acfpro-local-field-groups.php:824
-msgctxt "field-label"
-msgid "Select"
-msgstr ""
-
-#: acfpro-local-field-groups.php:876 acfpro-local-field-groups.php:1644
-#: acfpro-local-field-groups.php:3219
-msgctxt "field-label"
-msgid "Options"
-msgstr ""
-
-#: acfpro-local-field-groups.php:933
-msgctxt "field-label"
-msgid "Selected"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1187
-msgctxt "field-label"
-msgid "Checkables"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1232
-msgctxt "field-choices"
-msgid "Checkbox"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1233
-msgctxt "field-choices"
-msgid "Radio"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1495 acfpro-local-field-groups.php:2451
-msgctxt "field-label"
-msgid "View"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1507 acfpro-local-field-groups.php:2463
-msgctxt "field-choices"
-msgid "Full width"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1508 acfpro-local-field-groups.php:2465
-msgctxt "field-choices"
-msgid "In columns"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1521
-msgctxt "field-label"
-msgid "Content at begin of group"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1548
-msgctxt "field-label"
-msgid "Content at end of group"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1669
-msgctxt "field-label"
-msgid "Enable validation fields"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1696
-msgctxt "field-label"
-msgid "Enable placeholder fields"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1723 acfpro-local-field-groups.php:2502
-msgctxt "field-label"
-msgid "Enable advanced customization"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1750
-msgctxt "field-label"
-msgid "Content before form"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1777
-msgctxt "field-label"
-msgid "Content after form"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1885
-msgctxt "field-title"
-msgid "Composer"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1889
-msgctxt "field-label"
-msgid "Composer"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1908
-msgctxt "field-label"
-msgid "Block"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1923 acfpro-local-field-groups.php:1956
-#: acfpro-local-field-groups.php:3190 acfpro-local-field-groups.php:3689
-msgctxt "field-label"
-msgid "Content"
-msgstr ""
-
-#: acfpro-local-field-groups.php:1975 acfpro-local-field-groups.php:2061
-#: acfpro-local-field-groups.php:2147 acfpro-local-field-groups.php:2239
-#: acfpro-local-field-groups.php:2331 acfpro-local-field-groups.php:2415
-msgctxt "field-label"
-msgid "Additional class names"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2007 acfpro-local-field-groups.php:2040
-#: acfpro-local-field-groups.php:2671
-msgctxt "field-label"
-msgid "Slideshow"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2179 acfpro-local-field-groups.php:2212
-msgctxt "field-label"
-msgid "Page"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2271 acfpro-local-field-groups.php:2304
-msgctxt "field-label"
-msgid "Post"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2464
-msgctxt "field-choices"
-msgid "Centered"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2478
-msgctxt "field-label"
-msgid "Personalization"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2556
-msgctxt "field-title"
-msgid "Hero"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2560
-msgctxt "field-label"
-msgid "Hero"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2621
-msgctxt "field-title"
-msgid "Slideshow"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2698
-msgctxt "field-label"
-msgid "Media"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2726
-msgctxt "field-choices"
-msgid "Image"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2727
-msgctxt "field-choices"
-msgid "Embed"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2728 acfpro-local-field-groups.php:3058
-#: acfpro-local-field-groups.php:3557
-msgctxt "field-choices"
-msgid "Custom"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2741
-msgctxt "field-label"
-msgid "Landscape Image"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2773
-msgctxt "field-label"
-msgid "Add portrait image"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2800
-msgctxt "field-label"
-msgid "Portrait Image"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2837
-msgctxt "field-label"
-msgid "Embed"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2861
-msgctxt "field-label"
-msgid "Custom"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2888 acfpro-local-field-groups.php:3337
-msgctxt "field-label"
-msgid "Caption"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2904 acfpro-local-field-groups.php:3378
-msgctxt "field-label"
-msgid "Text"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2923 acfpro-local-field-groups.php:3397
-#: acfpro-local-field-groups.php:4046
-msgctxt "field-label"
-msgid "Text color"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2938 acfpro-local-field-groups.php:3412
-msgctxt "field-label"
-msgid "Add an overlay background"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2957 acfpro-local-field-groups.php:3431
-#: acfpro-local-field-groups.php:4061
-msgctxt "field-label"
-msgid "Background color"
-msgstr ""
-
-#: acfpro-local-field-groups.php:2983 acfpro-local-field-groups.php:3457
-#: acfpro-local-field-groups.php:4079
-msgctxt "field-label"
-msgid "Add a text shadow"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3002 acfpro-local-field-groups.php:3476
-#: acfpro-local-field-groups.php:4098
-msgctxt "field-label"
-msgid "Text shadow color"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3028 acfpro-local-field-groups.php:3502
-msgctxt "field-label"
-msgid "Call to action"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3056 acfpro-local-field-groups.php:3555
-msgctxt "field-choices"
-msgid "Link"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3057 acfpro-local-field-groups.php:3556
-msgctxt "field-choices"
-msgid "Button"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3071 acfpro-local-field-groups.php:3570
-msgctxt "field-label"
-msgid "Link"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3095 acfpro-local-field-groups.php:3594
-msgctxt "field-label"
-msgid "Button"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3156 acfpro-local-field-groups.php:3655
-msgctxt "field-label"
-msgid "Alternate text"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3243
-msgctxt "field-label"
-msgid "Enable autoplay"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3262
-msgctxt "field-label"
-msgid "Slide duration"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3290
-msgctxt "field-label"
-msgid "Transition duration"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3318
-msgctxt "field-label"
-msgid "Enable fullscreen"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3372
-msgctxt "field-message"
-msgid "When utilizing global caption singular captions will not be shown."
-msgstr ""
-
-#: acfpro-local-field-groups.php:3537
-msgctxt "field-message"
-msgid ""
-"When utilizing global call-to-action singular call-to-action will not be "
-"shown."
-msgstr ""
-
-#: acfpro-local-field-groups.php:3747
-msgctxt "field-title"
-msgid "Wizard"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3751 acfpro-local-field-groups.php:3808
-msgctxt "field-label"
-msgid "Heading"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3770 acfpro-local-field-groups.php:3827
-msgctxt "field-label"
-msgid "Description"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3789
-msgctxt "field-label"
-msgid "Pages"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3867 acfpro-local-field-groups.php:3907
-msgctxt "field-label"
-msgid "Footer"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3886
-msgctxt "field-label"
-msgid "Send from this page"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3926
-msgctxt "field-label"
-msgid "Enable pagination"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3975
-msgctxt "field-title"
-msgid "Personalization"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3979
-msgctxt "field-label"
-msgid "Page mode"
-msgstr ""
-
-#: acfpro-local-field-groups.php:3991
-msgctxt "field-choices"
-msgid "modale"
-msgstr ""
-
-#: acfpro-local-field-groups.php:4004
-msgctxt "field-label"
-msgid "Page appearance settings"
-msgstr ""
-
-#: acfpro-local-field-groups.php:4156
-msgctxt "field-title"
-msgid "Details"
-msgstr ""
-
-#: acfpro-local-field-groups.php:4160
-msgctxt "field-label"
-msgid "Add custom footer notes"
-msgstr ""
-
-#: acfpro-local-field-groups.php:4179
-msgctxt "field-label"
-msgid "Footer notes"
-msgstr ""
-
 #: archive.php:12
 msgid "Archive"
 msgstr "Archivio"
 
-#: comments.php:24
-msgctxt "comments title"
-msgid "Comments"
-msgstr "Commenti"
-
-#: comments.php:45
-msgid "Reply"
-msgstr "Rispondi"
-
-#: comments.php:57
-msgid "Comments are closed."
-msgstr "I commenti sono chiusi."
-
-#: inc/back-compat.php:34
+#: inc/back-compat.php:32
 #, php-format
 msgid ""
 "This theme requires at least WordPress 4.8 (current version %s) and PHP 7.x, "
@@ -627,78 +43,6 @@ msgid ""
 msgstr ""
 "Questo tema richiede WordPress 4.8 (versione corrente %s) e PHP 7.x, per "
 "favore aggiorna e riprova nuovamente."
-
-#: inc/class-theme-admin.php:205
-msgid "Enable slider"
-msgstr "Abilita slider"
-
-#: inc/class-theme-customizer.php:65 inc/class-theme-options.php:180
-msgid "Brand Name"
-msgstr "Nome brand"
-
-#: inc/class-theme-customizer.php:80
-msgid "Layout settings"
-msgstr "Impostazioni layout"
-
-#: inc/class-theme-customizer.php:90
-msgid "Page disposition"
-msgstr "Disposizione pagina"
-
-#: inc/class-theme-customizer.php:94
-msgid "Select the disposition of the content."
-msgstr "Seleziona una disposizione per il contenuto."
-
-#: inc/class-theme-customizer.php:96 inc/class-theme-customizer.php:132
-msgid "Left to right"
-msgstr "Da sinistra a destra"
-
-#: inc/class-theme-customizer.php:97 inc/class-theme-customizer.php:133
-msgid "Right to left"
-msgstr "Da destra a sinistra"
-
-#: inc/class-theme-functions.php:578
-msgid "You have a message"
-msgstr "Hai un messaggio"
-
-#: inc/class-theme-functions.php:652
-msgctxt "checkbox-value"
-msgid "YES"
-msgstr "SÌ"
-
-#: inc/class-theme-functions.php:654
-msgctxt "checkbox-value"
-msgid "NO"
-msgstr "NO"
-
-#: inc/class-theme-functions.php:899
-#, php-format
-msgid "Sent from the server %s"
-msgstr "Inviato dal server %s"
-
-#: inc/class-theme-functions.php:1004
-msgid "Bad Request! An error is occurred with malformed request."
-msgstr ""
-"Richiesta errata! Si è verificato un errore con una richiesta non conforme."
-
-#: inc/class-theme-functions.php:1005
-msgid "Your message was sent successfully!"
-msgstr "Il tuo messaggio è stato inviato!"
-
-#: inc/class-theme-functions.php:1006
-msgid "Sorry! There were problems during send, please try again later."
-msgstr ""
-"Scusa! Si sono verificati dei problemi durante l'invio, riprova di nuovo."
-
-#: inc/class-theme-functions.php:1007
-#, php-format
-msgid "%s is a required field."
-msgstr "%s è un campo richiesto."
-
-#: inc/class-theme-functions.php:1088
-#, php-format
-msgctxt "wizard"
-msgid "Page %s"
-msgstr "Pagina %s"
 
 #: inc/class-theme-options.php:63
 msgctxt "page_title"
@@ -710,400 +54,305 @@ msgctxt "menu_title"
 msgid "Theme"
 msgstr "Tema"
 
-#: inc/class-theme-options.php:203
+#: inc/class-theme-options.php:190
 msgid "Frontend"
 msgstr ""
 
-#: inc/class-theme-options.php:211
-msgid "Archive gallery entry post format default to slider"
-msgstr "Trasforma le gallerie in uno slider"
-
-#: inc/class-theme-options.php:231
+#: inc/class-theme-options.php:198
 msgid "Convert emoticons like :-) and :-P to graphics on display."
 msgstr ""
 
-#: inc/class-theme-options.php:261
+#: inc/class-theme-options.php:228
 msgid "Backend"
 msgstr ""
 
-#: inc/class-theme-options.php:269
-msgid "Enhances UI"
-msgstr "Miglioramenti UI"
-
-#: inc/class-theme-options.php:289
-msgid "Enhances font readability"
-msgstr "Miglioramenti leggibilità font"
-
-#: inc/class-theme-options.php:319
+#: inc/class-theme-options.php:246
 msgid "Advanced"
 msgstr "Avanzato"
 
-#: inc/class-theme-options.php:327
-msgid "Unexposes post ID"
-msgstr "Non esporre l'ID del post"
-
-#: inc/class-theme-options.php:347
+#: inc/class-theme-options.php:254
 msgid "Prevents redirecting to nearest matching URL"
 msgstr "Previeni il redirezionamento all'URL più simile"
 
-#: inc/class-theme-options.php:366
+#: inc/class-theme-options.php:273
 msgid "Unexposes software versions"
 msgstr "Non esporre la versione del software"
 
-#: inc/class-theme-options.php:387
+#: inc/class-theme-options.php:294
 msgid "Disables the reset password functionality"
 msgstr "Disabilita la funzionalità di recupero password"
 
-#: inc/class-theme-options.php:427
+#: inc/class-theme-options.php:334
 msgid "Theme settings"
 msgstr "Impostazioni tema"
 
-#: inc/class-theme-options.php:448
+#: inc/class-theme-options.php:355
 msgid "Error while saving."
 msgstr "Errore durante il salvataggio."
 
-#: inc/class-theme-options.php:449
+#: inc/class-theme-options.php:356
 msgid "Settings saved."
 msgstr "Impostazioni salvate."
 
-#: inc/class-theme-options.php:892
+#: inc/class-theme-options.php:799
 msgctxt "options"
 msgid "Add Row"
 msgstr "Aggiungi campo"
 
-#: inc/class-theme-options.php:893
+#: inc/class-theme-options.php:800
 msgctxt "options"
 msgid "Remove Row"
 msgstr "Rimuovi campo"
 
-#: inc/class-theme-setup.php:145
+#: inc/class-theme-setup.php:121
 msgid "Primary navigation"
 msgstr "Navigazione primaria"
 
-#: inc/class-theme-setup.php:146
+#: inc/class-theme-setup.php:122
 msgid "Secondary navigation"
 msgstr "Navigazione secondaria"
 
-#: inc/class-theme-setup.php:147
+#: inc/class-theme-setup.php:123
 msgid "Footer navigation"
 msgstr "Navigazione footer"
 
-#: inc/class-theme-setup.php:294 sidebar.php:15
+#: inc/class-theme-setup.php:152 sidebar.php:15
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: inc/class-theme-setup.php:296
+#: inc/class-theme-setup.php:154
 msgid "A sidebar to displays widgets."
 msgstr "Una sidebar per mostrare widget."
 
-#: inc/class-theme-setup.php:304
+#: inc/class-theme-setup.php:162
 msgid "Navigation primary (before menu)"
 msgstr "Navigazione primaria (prima del menu)"
 
-#: inc/class-theme-setup.php:306
+#: inc/class-theme-setup.php:164
 msgid "Add widgets before the primary menu navigation."
 msgstr "Inserisce i widget prima del menu nella navigazione primaria."
 
-#: inc/class-theme-setup.php:314
+#: inc/class-theme-setup.php:172
 msgid "Navigation primary (after menu)"
 msgstr "Navigazione primaria (dopo il menu)"
 
-#: inc/class-theme-setup.php:316
+#: inc/class-theme-setup.php:174
 msgid "Add widgets after the primary menu navigation."
 msgstr "Inserisce i widget dopo il menu nella navigazione primaria."
 
-#: inc/class-theme-setup.php:324
+#: inc/class-theme-setup.php:182
 msgid "Navigation secondary (before menu)"
 msgstr "Navigazione secondaria (prima del menu)"
 
-#: inc/class-theme-setup.php:326
+#: inc/class-theme-setup.php:184
 msgid "Add widgets before the secondary menu navigation."
 msgstr "Inserisce i widget prima del menu nella navigazione secondaria."
 
-#: inc/class-theme-setup.php:334
+#: inc/class-theme-setup.php:192
 msgid "Navigation secondary (after menu)"
 msgstr "Navigazione secondaria (dopo il menu)"
 
-#: inc/class-theme-setup.php:336
+#: inc/class-theme-setup.php:194
 msgid "Add widgets after the secondary menu navigation."
 msgstr "Inserisce i widget dopo il menu nella navigazione primaria."
 
-#: inc/class-theme-setup.php:344
+#: inc/class-theme-setup.php:202
 msgid "Page (top)"
 msgstr "Pagina (in alto)"
 
-#: inc/class-theme-setup.php:346
+#: inc/class-theme-setup.php:204
 msgid "Add widgets in top of the page."
 msgstr "Inserisce i widget in alto nella pagina."
 
-#: inc/class-theme-setup.php:354
+#: inc/class-theme-setup.php:212
 msgid "Page (bottom)"
 msgstr "Pagina (in basso)"
 
-#: inc/class-theme-setup.php:356
+#: inc/class-theme-setup.php:214
 msgid "Add widgets in bottom of the page."
 msgstr "Inserisce i widget in basso nella pagina."
 
-#: inc/class-theme-setup.php:364
+#: inc/class-theme-setup.php:222
 msgid "Front page (top)"
 msgstr "Pagina iniziale (in alto)"
 
-#: inc/class-theme-setup.php:366
+#: inc/class-theme-setup.php:224
 msgid "Add widgets in top of the front page."
 msgstr "Inserisce i widget in alto nella pagina iniziale."
 
-#: inc/class-theme-setup.php:374
+#: inc/class-theme-setup.php:232
 msgid "Front page (bottom)"
 msgstr "Pagina iniziale (in basso)"
 
-#: inc/class-theme-setup.php:376
+#: inc/class-theme-setup.php:234
 msgid "Add widgets in bottom of the front page."
 msgstr "Inserisce i widget in basso nella pagina iniziale."
 
-#: inc/class-theme-setup.php:384
+#: inc/class-theme-setup.php:242
 msgid "Post (top)"
 msgstr "Articolo (in alto)"
 
-#: inc/class-theme-setup.php:386
+#: inc/class-theme-setup.php:244
 msgid "Add widgets in top of the post."
 msgstr "Inserisce i widget in alto nell'articolo."
 
-#: inc/class-theme-setup.php:394
+#: inc/class-theme-setup.php:252
 msgid "Post (bottom)"
 msgstr "Articolo (in basso)"
 
-#: inc/class-theme-setup.php:396
+#: inc/class-theme-setup.php:254
 msgid "Add widgets in bottom of the post."
 msgstr "Inserisce i widget in basso nell'articolo."
 
-#: inc/class-theme-setup.php:404
+#: inc/class-theme-setup.php:262
 msgid "Footer (before menu)"
 msgstr "Footer (prima del menu)"
 
-#: inc/class-theme-setup.php:406
+#: inc/class-theme-setup.php:264
 msgid "Add widgets before the footer menu."
 msgstr "Inserisce i widget prima del menu nel pié di pagina."
 
-#: inc/class-theme-setup.php:414
+#: inc/class-theme-setup.php:272
 msgid "Footer (after menu)"
 msgstr "Footer (dopo il menu)"
 
-#: inc/class-theme-setup.php:416
+#: inc/class-theme-setup.php:274
 msgid "Add widgets after the footer menu."
 msgstr "Inserisce i widget dopo il menu nel pié di pagina."
 
-#: inc/class-theme-setup.php:425
-msgid "Store"
-msgstr ""
-
-#: inc/class-theme-setup.php:427
-msgid "A sidebar to displays widget in the shop after the content."
-msgstr ""
-"Una sidebar per mostrare widget dopo il contenuto della pagina dello store."
-
-#: inc/class-theme-shop-wc.php:400 woocommerce/checkout/form-checkout.php:108
-msgid "Additional information"
-msgstr "Informazioni aggiuntive"
-
-#: inc/class-theme-shop-wc.php:409
-#, php-format
-msgid "Reviews (%d)"
-msgstr ""
-
-#: inc/class-theme-shop-wc.php:438
-msgid "Return to shop"
-msgstr ""
-
-#: inc/class-theme-shop-wc.php:449 inc/class-theme-shop-wc.php:450
-msgid "Update cart"
-msgstr ""
-
-#: inc/class-theme-template.php:193
-msgid "JavaScript must be enabled to use this feature."
-msgstr ""
-
-#: inc/class-theme-template.php:1531
+#: inc/class-theme-template.php:167
 msgid "Write a comment"
 msgstr "Scrivi un commento"
 
-#: inc/class-theme-template.php:1532
+#: inc/class-theme-template.php:168
 #, php-format
 msgid "Reply to %s"
 msgstr "Rispondi a %s"
 
-#: inc/class-theme-template.php:1705 inc/template-functions.php:222
-#: inc/template-tags.php:40
+#: inc/class-theme-template.php:286 inc/template-functions.php:53
+#: inc/template-tags.php:39
 msgid "Previous"
 msgstr "Precendente"
 
-#: inc/class-theme-template.php:1707 inc/template-functions.php:224
-#: inc/template-tags.php:42
+#: inc/class-theme-template.php:288 inc/template-functions.php:55
+#: inc/template-tags.php:41
 msgid "Next"
 msgstr "Successivo"
 
-#: inc/class-theme-template.php:1709
+#: inc/class-theme-template.php:290
 msgid "Pages"
 msgstr "Pagine"
 
-#: inc/class-widget-recent-comments.php:34
-msgid "Your site&#8217;s most recent comments."
-msgstr ""
-
-#: inc/class-widget-recent-comments.php:38
-#: inc/class-widget-recent-comments.php:56
-msgid "Recent Comments"
-msgstr ""
-
-#: inc/class-widget-recent-posts.php:33
-msgid "Your site&#8217;s most recent Posts."
-msgstr ""
-
-#: inc/class-widget-recent-posts.php:37 inc/class-widget-recent-posts.php:52
-msgid "Recent Posts"
-msgstr ""
-
-#: inc/template-tags.php:44 inc/template-tags.php:45
+#: inc/template-tags.php:43 inc/template-tags.php:44
 #, php-format
 msgctxt "post-navigation"
 msgid "%1$s: \"%2$s\""
 msgstr ""
 
-#: inc/template-tags.php:49
+#: inc/template-tags.php:48
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:156 inc/template-tags.php:238
+#: inc/template-tags.php:155 inc/template-tags.php:237
 msgctxt "previous set of posts"
 msgid "Previous"
 msgstr ""
 
-#: inc/template-tags.php:158 inc/template-tags.php:239
+#: inc/template-tags.php:157 inc/template-tags.php:238
 msgctxt "next set of posts"
 msgid "Next"
 msgstr ""
 
-#: inc/template-tags.php:160 inc/template-tags.php:240
+#: inc/template-tags.php:159 inc/template-tags.php:239
 msgid "Posts navigation"
 msgstr ""
 
-#: inc/template-tags.php:294
+#: inc/template-tags.php:293
 msgid "Older comments"
 msgstr ""
 
-#: inc/template-tags.php:295
+#: inc/template-tags.php:294
 msgid "Newer comments"
 msgstr ""
 
-#: inc/template-tags.php:296 inc/template-tags.php:370
+#: inc/template-tags.php:295 inc/template-tags.php:369
 msgid "Comments navigation"
 msgstr ""
 
-#: inc/template-tags.php:425
+#: inc/template-tags.php:424
 msgid "Edit This"
 msgstr ""
 
-#: inc/template-tags.php:624
+#: inc/template-tags.php:623
 msgid "Categories"
 msgstr ""
 
-#: inc/template-tags.php:632 inc/template-tags.php:682
+#: inc/template-tags.php:631 inc/template-tags.php:681
 #, php-format
 msgctxt "post-time"
 msgid "%1$s %2$s"
 msgstr ""
 
-#: inc/template-tags.php:634 inc/template-tags.php:684
+#: inc/template-tags.php:633 inc/template-tags.php:683
 msgctxt "post-time"
 msgid "Posted on"
 msgstr "Pubblicato"
 
-#: inc/template-tags.php:642 inc/template-tags.php:691
+#: inc/template-tags.php:641 inc/template-tags.php:690
 #, php-format
 msgctxt "post-author"
 msgid "%1$s %2$s"
 msgstr ""
 
-#: inc/template-tags.php:644 inc/template-tags.php:693
+#: inc/template-tags.php:643 inc/template-tags.php:692
 msgctxt "post-author"
 msgid "by"
 msgstr "da"
 
-#: inc/template-tags.php:729
+#: inc/template-tags.php:728
 msgid "Tags"
 msgstr "Tag"
 
-#: inc/template-tags.php:885
-msgid "Close"
-msgstr "Chiudi"
-
-#: inc/template-tags.php:929
-msgid "Navigation"
-msgstr ""
-
-#: page-templates/archive-full.php:12
+#: page-templates/archive-full.php:15
 msgid "Archive (full posts)"
 msgstr ""
 
-#: page-templates/archive-list.php:12
+#: page-templates/archive-list.php:15
 msgid "Archive (list posts)"
 msgstr ""
-
-#: page-templates/form.php:14
-msgid "Form"
-msgstr ""
-
-#: page-templates/modal.php:12
-msgid "Modal"
-msgstr "Modale"
-
-#: page-templates/nest.php:14
-msgid "Nest"
-msgstr "Innestato"
 
 #: page-templates/page-sidebar.php:12
 msgid "Page (sidebar)"
 msgstr "Pagina (sidebar)"
 
-#: page-templates/slideshow.php:12
-msgid "Slideshow"
-msgstr ""
-
-#: page-templates/wizard.php:14
-msgid "Wizard"
-msgstr ""
-
-#: page.php:32
+#: page.php:30
 msgid "Pages:"
 msgstr "Pagine:"
 
-#: search.php:24
+#: search.php:23
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Risultati di ricerca per: %s"
 
-#: search.php:26 template-parts/none.php:18
+#: search.php:25 template-parts/none.php:18
 msgid "Nothing Found"
 msgstr "Nessun risultato"
 
-#: searchform.php:29
+#: searchform.php:35
 msgctxt "label"
 msgid "Search for:"
 msgstr "Cerca per:"
 
-#: searchform.php:31
+#: searchform.php:37
 #, php-format
 msgctxt "placeholder"
 msgid "Search %s &hellip;"
 msgstr "Cerca %s &hellip;"
 
-#: searchform.php:33
+#: searchform.php:39
 msgctxt "submit button"
 msgid "Search"
 msgstr "Cerca"
-
-#: sidebar-shop.php:15
-msgid "Shop"
-msgstr ""
 
 #: template-parts/author.php:14
 msgid "Published by"
@@ -1114,22 +363,17 @@ msgstr "Pubblicato da"
 msgid "View all posts by %s"
 msgstr "Mostra tutti gli articoli di %s"
 
-#: template-parts/hero.php:18
-msgctxt "slideshow accessibility"
-msgid "Slideshow hero"
-msgstr ""
-
-#: template-parts/navigation-footer.php:15
+#: template-parts/navigation-footer.php:13
 msgctxt "navigation-footer"
 msgid "Menu"
 msgstr ""
 
-#: template-parts/navigation-primary.php:17
+#: template-parts/navigation-primary.php:13
 msgctxt "navigation-primary"
 msgid "Menu"
 msgstr ""
 
-#: template-parts/navigation-secondary.php:15
+#: template-parts/navigation-secondary.php:13
 msgctxt "menu-secondary"
 msgid "Menu"
 msgstr ""
@@ -1158,20 +402,10 @@ msgstr ""
 "Non sembrano esserci corrispondenze per ciò che stai cercando. Potresti "
 "provare a fare una ricerca &hellip;"
 
-#: template-parts/post.php:76
+#: template-parts/post.php:87
 #, php-format
 msgid ""
 "Continue reading<span class=\"sr-only sr-only-focusable\"> \"%s\"</span>"
-msgstr ""
-
-#: template-parts/widget-recent-comments.php:29
-#, php-format
-msgctxt "widgets"
-msgid "%1$s on %2$s"
-msgstr ""
-
-#: template-parts/widget-recent-posts.php:30
-msgid "(no title)"
 msgstr ""
 
 #: template-parts/widgets-footer-after.php:15
@@ -1224,354 +458,4 @@ msgstr ""
 #: template-parts/widgets-post-top.php:15
 msgctxt "post-top"
 msgid "Post"
-msgstr ""
-
-#: woocommerce/cart/cart-totals.php:25
-msgid "Cart totals"
-msgstr ""
-
-#: woocommerce/cart/cart-totals.php:30 woocommerce/cart/cart-totals.php:31
-#: woocommerce/checkout/review-order.php:58
-msgid "Subtotal"
-msgstr ""
-
-#: woocommerce/cart/cart-totals.php:52 woocommerce/cart/cart-totals.php:53
-msgid "Shipping"
-msgstr ""
-
-#: woocommerce/cart/cart-totals.php:68
-#, php-format
-msgid "(estimated for %s)"
-msgstr ""
-
-#: woocommerce/cart/cart-totals.php:89 woocommerce/cart/cart-totals.php:90
-#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:100
-#: woocommerce/checkout/review-order.php:26
-#: woocommerce/checkout/review-order.php:105
-msgid "Total"
-msgstr ""
-
-#: woocommerce/cart/cart.php:32 woocommerce/cart/cart.php:62
-#: woocommerce/checkout/review-order.php:25
-msgid "Product"
-msgstr ""
-
-#: woocommerce/cart/cart.php:33 woocommerce/cart/cart.php:78
-msgid "Price"
-msgstr ""
-
-#: woocommerce/cart/cart.php:34 woocommerce/cart/cart.php:84
-msgid "Quantity"
-msgstr ""
-
-#: woocommerce/cart/cart.php:74
-msgid "Available on backorder"
-msgstr ""
-
-#: woocommerce/cart/cart.php:112
-msgid "Remove this item"
-msgstr ""
-
-#: woocommerce/cart/proceed-to-checkout-button.php:24
-msgid "Proceed to checkout"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:30
-msgid "Calculate shipping"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:36
-msgid "Select a country&hellip;"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:55
-#: woocommerce/cart/shipping-calculator.php:60
-#: woocommerce/cart/shipping-calculator.php:72
-msgid "State / County"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:61
-msgid "Select a state&hellip;"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:83
-msgid "City"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:91
-msgid "Postcode / ZIP"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:96
-#: woocommerce/checkout/payment.php:42
-msgid "Update totals"
-msgstr ""
-
-#: woocommerce/cart/theme__cart-actions.php:14
-msgid "Coupon:"
-msgstr ""
-
-#: woocommerce/cart/theme__cart-actions.php:16
-#: woocommerce/checkout/form-coupon.php:31
-msgid "Coupon code"
-msgstr ""
-
-#: woocommerce/cart/theme__cart-actions.php:18
-#: woocommerce/checkout/form-coupon.php:33
-msgid "Apply coupon"
-msgstr ""
-
-#: woocommerce/checkout/form-checkout.php:27
-msgid "You must be logged in to checkout."
-msgstr ""
-
-#: woocommerce/checkout/form-checkout.php:34
-msgid "Your order"
-msgstr ""
-
-#: woocommerce/checkout/form-checkout.php:52
-msgid "Create an account?"
-msgstr ""
-
-#: woocommerce/checkout/form-checkout.php:78
-msgid "Billing &amp; Shipping"
-msgstr ""
-
-#: woocommerce/checkout/form-checkout.php:85
-msgid "Billing details"
-msgstr ""
-
-#: woocommerce/checkout/form-checkout.php:88
-#: woocommerce/myaccount/form-edit-address.php:20
-msgid "Shipping address"
-msgstr ""
-
-#: woocommerce/checkout/form-coupon.php:24
-msgid "Have a coupon?"
-msgstr ""
-
-#: woocommerce/checkout/form-coupon.php:24
-msgid "Click here to enter your code"
-msgstr ""
-
-#: woocommerce/checkout/form-login.php:24
-msgid "Returning customer?"
-msgstr ""
-
-#: woocommerce/checkout/form-login.php:25 woocommerce/global/form-login.php:44
-#: woocommerce/myaccount/form-login.php:33
-#: woocommerce/myaccount/form-login.php:52
-msgid "Login"
-msgstr ""
-
-#: woocommerce/checkout/form-login.php:34
-msgid ""
-"If you have shopped with us before, please enter your details in the boxes "
-"below. If you are a new customer, please proceed to the Billing &amp; "
-"Shipping section."
-msgstr ""
-
-#: woocommerce/checkout/payment.php:26
-msgid "Choose a payment method"
-msgstr "Scegli un metodo di pagamento"
-
-#: woocommerce/checkout/payment.php:34
-msgid ""
-"Sorry, it seems that there are no available payment methods for your state. "
-"Please contact us if you require assistance or wish to make alternate "
-"arrangements."
-msgstr ""
-
-#: woocommerce/checkout/payment.php:34
-msgid "Please fill in your details above to see available payment methods."
-msgstr ""
-
-#: woocommerce/checkout/payment.php:41
-msgid ""
-"Since your browser does not support JavaScript, or it is disabled, please "
-"ensure you click the <em>Update Totals</em> button before placing your "
-"order. You may be charged more than the amount stated above if you fail to "
-"do so."
-msgstr ""
-
-#: woocommerce/global/form-login.php:32 woocommerce/global/form-login.php:33
-#: woocommerce/myaccount/form-lost-password.php:27
-msgid "Username or email"
-msgstr ""
-
-#: woocommerce/global/form-login.php:36 woocommerce/global/form-login.php:37
-#: woocommerce/myaccount/form-login.php:44
-#: woocommerce/myaccount/form-login.php:94
-msgid "Password"
-msgstr ""
-
-#: woocommerce/global/form-login.php:47 woocommerce/myaccount/form-login.php:54
-msgid "Remember me"
-msgstr ""
-
-#: woocommerce/global/form-login.php:51 woocommerce/myaccount/form-login.php:58
-msgid "Lost your password?"
-msgstr ""
-
-#: woocommerce/loop/result-count.php:28
-#, php-format
-msgid "Showing the single result"
-msgid_plural "Showing all %d results"
-msgstr[0] ""
-msgstr[1] ""
-
-#: woocommerce/loop/result-count.php:33
-#, php-format
-msgctxt "with first and last result"
-msgid "Showing the single result"
-msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
-msgstr[0] ""
-msgstr[1] ""
-
-#: woocommerce/myaccount/dashboard.php:27
-#, php-format
-msgid ""
-"From your account dashboard you can view your <a href=\"%1$s\">recent "
-"orders</a>, manage your <a href=\"%2$s\">shipping and billing addresses</a>, "
-"and <a href=\"%3$s\">edit your password and account details</a>."
-msgstr ""
-
-#: woocommerce/myaccount/form-add-payment-method.php:52
-msgid "Add payment method"
-msgstr ""
-
-#: woocommerce/myaccount/form-add-payment-method.php:58
-msgid ""
-"New payment methods can only be added during checkout. Please contact us if "
-"you require assistance."
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-account.php:27
-msgid "First name"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-account.php:31
-msgid "Last name"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-account.php:37
-#: woocommerce/myaccount/form-login.php:87
-msgid "Email address"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-account.php:42
-msgid "Password change"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-account.php:45
-msgid "Current password (leave blank to leave unchanged)"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-account.php:49
-msgid "New password (leave blank to leave unchanged)"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-account.php:53
-msgid "Confirm new password"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-account.php:63
-msgid "Save changes"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-address.php:20
-msgid "Billing address"
-msgstr ""
-
-#: woocommerce/myaccount/form-edit-address.php:49
-msgid "Save address"
-msgstr ""
-
-#: woocommerce/myaccount/form-login.php:40
-msgid "Username or email address"
-msgstr ""
-
-#: woocommerce/myaccount/form-login.php:71
-#: woocommerce/myaccount/form-login.php:104
-msgid "Register"
-msgstr ""
-
-#: woocommerce/myaccount/form-login.php:80
-msgid "Username"
-msgstr ""
-
-#: woocommerce/myaccount/form-lost-password.php:24
-msgid ""
-"Lost your password? Please enter your username or email address. You will "
-"receive a link to create a new password via email."
-msgstr ""
-
-#: woocommerce/myaccount/form-lost-password.php:37
-#: woocommerce/myaccount/form-reset-password.php:26
-msgid "Reset password"
-msgstr ""
-
-#: woocommerce/myaccount/form-reset-password.php:30
-msgid "Enter a new password below."
-msgstr ""
-
-#: woocommerce/myaccount/form-reset-password.php:33
-#: woocommerce/myaccount/form-reset-password.php:34
-msgid "New password"
-msgstr ""
-
-#: woocommerce/myaccount/form-reset-password.php:37
-#: woocommerce/myaccount/form-reset-password.php:38
-msgid "Re-enter new password"
-msgstr ""
-
-#: woocommerce/myaccount/form-reset-password.php:50
-msgid "Save"
-msgstr ""
-
-#: woocommerce/myaccount/lost-password-confirmation.php:22
-msgid "Password reset email has been sent."
-msgstr ""
-
-#: woocommerce/myaccount/lost-password-confirmation.php:26
-msgid ""
-"A password reset email has been sent to the email address on file for your "
-"account, but may take several minutes to show up in your inbox. Please wait "
-"at least 10 minutes before attempting another reset."
-msgstr ""
-
-#: woocommerce/myaccount/my-account.php:27
-#, php-format
-msgid "Hello %1$s (not %1$s? <a href=\"%2$s\">Log out</a>)"
-msgstr ""
-
-#: woocommerce/single-product/add-to-cart/variable.php:30
-msgid "This product is currently out of stock and unavailable."
-msgstr ""
-
-#: woocommerce/single-product/add-to-cart/variable.php:44
-msgid "Clear"
-msgstr ""
-
-#: woocommerce/single-product/add-to-cart/variation.php:22
-msgid ""
-"Sorry, this product is unavailable. Please choose a different combination."
-msgstr ""
-
-#: woocommerce/single-product/meta.php:29
-msgid "SKU:"
-msgstr ""
-
-#: woocommerce/single-product/meta.php:29
-msgid "N/A"
-msgstr ""
-
-#: woocommerce/single-product/meta.php:33
-msgid "Tag:"
-msgid_plural "Tags:"
-msgstr[0] ""
-msgstr[1] ""
-
-#: woocommerce/single-product/theme__category.php:29
-msgid "Category"
 msgstr ""

@@ -3,7 +3,7 @@
  * Search page template
  *
  * @package theme
- * @version 1.0
+ * @version 2.0
  */
 
 namespace theme;
@@ -11,13 +11,13 @@ namespace theme;
 
 get_header();
 ?>
-<main id="content" class="site-content" role="main">
+<main id="content" class="site-content">
 <?php
 if ( is_active_sidebar( 'page-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-top' );
 endif;
 ?>
-<section class="search container">
+<section class="search posts container">
 <header class="page-header">
 <?php if ( have_posts() ) : ?>
 	<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'theme' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
@@ -26,7 +26,7 @@ endif;
 <?php endif; ?>
 </header>
 <?php if ( have_posts() ) : ?>
-<div>
+<div class="search-results">
 <?php
 while ( have_posts() ) : the_post();
 	get_template_part( 'template-parts/search-entry', get_post_format() );
