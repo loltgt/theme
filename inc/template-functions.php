@@ -125,7 +125,7 @@ function paginate_links( $src_args = '' ) {
  *
  * @see /wp-includes/comments-template.php
  *
- * @global object $wp_rewrite - WP_Rewrite
+ * @global object $wp_rewrite - \WP_Rewrite
  * @param string|array $args
  * @return string|void $page_links
  */

@@ -16,7 +16,7 @@ Read the documentation here: https://github.com/loltgt/theme/wiki
 
 #### Requirements
 
-* WordPress >= 4.6
+* WordPress >= 5
 * PHP >= 7
 * Node.js
 

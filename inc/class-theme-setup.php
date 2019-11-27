@@ -136,14 +136,6 @@ class Setup {
 
 
 	/**
-	 * Output default inline script
-	 */
-	public function default_inline_script() {
-		get_template_part( 'template-parts/script-default', substr( $this->asset_prefix, 1 ) );
-	}
-
-
-	/**
 	 * Registers the widget area
 	 */
 	public function widgets_init() {

@@ -57,6 +57,10 @@ class Functions {
 	/**
 	 * Conditional helper for the login page
 	 *
+	 *
+	 * @access public
+	 * @static
+	 *
 	 * @global null|string $pagenow
 	 * @return bool
 	 */
