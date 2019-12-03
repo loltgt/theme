@@ -17,7 +17,7 @@ if ( is_active_sidebar( 'page-top' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-top' );
 endif;
 ?>
-<section class="search posts container">
+<div class="search posts container">
 <header class="page-header">
 <?php if ( have_posts() ) : ?>
 	<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'theme' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
@@ -39,7 +39,7 @@ else :
 	get_template_part( 'template-parts/none' );
 endif;
 ?>
-</section>
+</div>
 <?php
 if ( is_active_sidebar( 'page-bottom' ) ) :
 	get_template_part( 'template-parts/widgets', 'page-bottom' );

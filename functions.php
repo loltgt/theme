@@ -34,7 +34,7 @@ define( 'ASSETS_BASE_PATH', '/assets' );
 /* Verify requirements */
 
 if (
-	version_compare( $GLOBALS['wp_version'], '4.8', '<' ) ||
+	version_compare( $GLOBALS['wp_version'], '5', '<' ) ||
 	version_compare( PHP_VERSION, '7.0.0', '<' )
 ) {
 	require TEMPLATE_DIRECTORY . INCLUDES_BASE_PATH . '/back-compat.php';
