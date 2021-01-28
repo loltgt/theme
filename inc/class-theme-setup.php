@@ -103,9 +103,6 @@ class Setup {
 			array('script', 'style', 'comment-list', 'comment-form', 'gallery', 'caption')
 		);
 
-		// Adds post formats support
-		add_theme_support( 'post-formats' );
-
 		// Adds site icon support
 		add_theme_support( 'site-icon' );
 
