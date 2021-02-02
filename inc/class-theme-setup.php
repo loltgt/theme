@@ -106,6 +106,11 @@ class Setup {
 		// Adds site icon support
 		add_theme_support( 'site-icon' );
 
+		// Adds post formats support
+		add_theme_support( 'post-formats',
+			array('audio', 'video', 'gallery', 'image', 'aside', 'chat', 'link', 'quote', 'status')
+		);
+
 		// Gutenberg related
 		add_theme_support( 'editor-styles' );
 
